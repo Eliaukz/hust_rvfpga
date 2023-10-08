@@ -1,0 +1,1366 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 9032
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Oct 08 09:48:13 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	E:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	E:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	R9000X
+User home directory: C:/Users/R9000X
+User working directory: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2020.2
+RDI_DATADIR: E:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: E:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/R9000X/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/R9000X/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/R9000X/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	E:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/vivado.log
+Vivado journal file location: 	C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/vivado.jou
+Engine tmp dir: 	C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/.Xil/Vivado-9032-LAPTOP-SSK6ALTK
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: E:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: E:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	139 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,026 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\R9000X\Desktop\jiekou_lab\lab1\RVfpga_Soc\RVfpga_Soc.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 110 MB (+112965kb) [00:00:10]
+// [Engine Memory]: 1,026 MB (+924318kb) [00:00:10]
+// [GUI Memory]: 129 MB (+13602kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  3178 ms.
+// Tcl Message: open_project C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab1/ip_rope'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,026 MB. GUI used memory: 64 MB. Current time: 10/8/23, 9:48:14 AM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.910 ; gain = 0.000 
+// Project name: RVfpga_Soc; location: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd} 
+// Tcl Message: Reading block design file <C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:user:axi2wb_intcon_wrapper:1.0 - axi2wb_intcon_wrapper_0 Adding component instance block -- xilinx.com:user:wb_gpio_wrapper:1.0 - wb_gpio_wrapper_0 Adding component instance block -- xilinx.com:user:swerv_wrapper_verilog:1.0 - swerv_wrapper_verilog_0 Adding component instance block -- xilinx.com:module_ref:bootrom_wrapper:1.0 - bootrom_wrapper_0 Adding component instance block -- xilinx.com:module_ref:syscon_wrapper:1.0 - syscon_wrapper_0 Successfully read diagram <swerv_soc> from block design file <C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd> 
+// [GUI Memory]: 138 MB (+3013kb) [00:00:25]
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1776 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1015.910 ; gain = 0.000 
+// 'bF' command handler elapsed time: 9 seconds
+dismissDialog("Open Block Design"); // bz
+// [Engine Memory]: 1,081 MB (+3491kb) [00:00:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 92 MB. Current time: 10/8/23, 9:48:32 AM CST
+// [GUI Memory]: 145 MB (+309kb) [00:00:39]
+// RDIResource.RDIViews_PROPERTIES: Properties: close view
+// Elapsed time: 15 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1867, 631, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ak
+// Run Command: RDIResourceCommand.RDICommands_COPY
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1890, 249, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ak
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_COPY_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: copy_bd_objs /  [get_bd_ports {dmi_reg_rdata_0}] 
+// bz (cr):  Paste : addNotify
+dismissDialog("Paste"); // bz
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1866, 28, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'copy_bd_objs /  [get_bd_ports {dmi_reg_rdata_0}]' 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1865, 135, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ak
+// bL (cr): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "ram"); // aa
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_DIRECTION, "Output", 1); // e
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_ADD_OBJECT
+// [GUI Memory]: 153 MB (+745kb) [00:01:22]
+dismissDialog("Create Port"); // bL
+// Tcl Message: create_bd_port -dir O ram 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1863, 131, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "External Port Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1865, 134, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "External Port Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 45 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'create_bd_port -dir O ram' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,117 MB. GUI used memory: 99 MB. Current time: 10/8/23, 9:50:17 AM CST
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 903, 246, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Interface Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 901, 247, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Interface Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 817, 248, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Interface Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 817, 244, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+// Elapsed time: 35 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1764, 214, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "Validate Design"); // ak
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design 
+// dR (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dR
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1824, 206, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+// Elapsed time: 46 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 653, 311, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ak
+// bL (cr): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "ram"); // aa
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_DIRECTION, "Output", 1); // e
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // bL
+// bz (cr):  Create Port : addNotify
+// Tcl Message: create_bd_port -dir O ram 
+dismissDialog("Create Port"); // bz
+// Elapsed time: 52 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1769, 320, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1757, 315, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'create_bd_port -dir O ram' 
+// Elapsed time: 149 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// Elapsed time: 29 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1781, 199, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ak
+// cW (cr): Add Module: addNotify
+// Elapsed time: 10 seconds
+setText("PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD", "ram"); // OverlayTextField
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Add Module"); // cW
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1822, 189, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+// Elapsed time: 10 seconds
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ak
+// bL (cr): Create Port: addNotify
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CONNECT, "Connect to matching selected ports", true); // g: TRUE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CREATE_VECTOR, "Create vector:", true); // g: TRUE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CONNECT, "Connect to matching selected ports", true); // g: TRUE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CONNECT, "Connect to matching selected ports", true); // g: TRUE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CONNECT, "Connect to matching selected ports", true); // g: TRUE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CREATE_VECTOR, "Create vector:", false); // g: FALSE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CONNECT, "Connect to matching selected ports", true); // g: TRUE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CONNECT, "Connect to matching selected ports", true); // g: TRUE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CONNECT, "Connect to matching selected ports", true); // g: TRUE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CONNECT, "Connect to matching selected ports", true); // g: TRUE
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CONNECT, "Connect to matching selected ports", true); // g: TRUE
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_TYPE, "Clock", 0); // e
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_TYPE, "Reset", 1); // e
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_TYPE, "Interrupt", 2); // e
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_TYPE, "Data", 3); // e
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_TYPE, "Clock Enable", 4); // e
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_TYPE, "Data", 3); // e
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "ram"); // aa
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_DIRECTION, "Output", 1); // e
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // bL
+// Tcl Message: create_bd_port -dir O -type data ram 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Pin: addNotify
+dismissDialog("Customize Pin"); // r
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1767, 184, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ak
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports ram] 
+// [Engine Memory]: 1,136 MB (+1215kb) [00:10:30]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1784, 166, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ak
+// bL (cr): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "ram"); // aa
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_DIRECTION, "Output", 1); // e
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CREATE_VECTOR, "Create vector:", true); // g: TRUE
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_TYPE, "Data", 3); // e
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // bL
+// Tcl Message: create_bd_port -dir O -from 31 -to 0 -type data ram 
+// Elapsed time: 18 seconds
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, axi2wb_intcon_wrapper_0, o_ram_axi4]", 18, false, false, false, false, true, false); // a - Popup Trigger
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'create_bd_port -dir O -from 31 -to 0 -type data ram' 
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, axi2wb_intcon_wrapper_0, o_ram_axi4]", 17, false, false, false, false, true, false); // a - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 161 MB (+329kb) [00:11:18]
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_intf_pins_external  [get_bd_intf_pins axi2wb_intcon_wrapper_0/o_ram_axi4] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Port: addNotify
+// Elapsed time: 22 seconds
+dismissDialog("Customize Port"); // r
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1826, 252, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+// Tcl Command: 'set_property location {1029 -950} [get_bd_intf_ports o_ram_axi4_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1029 -950} [get_bd_intf_ports o_ram_axi4_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Port: addNotify
+// Elapsed time: 14 seconds
+setText(PAResourceItoN.IPIComponentName_COMPONENT_NAME, "o_ram_axi4_0", true); // aa
+setText(PAResourceItoN.IPIComponentName_COMPONENT_NAME, "o_ram_axi4_0"); // aa
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Customize Port"); // r
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1773, 234, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "External Interface Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1817, 237, 2028, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Port: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "User Signals", 1); // bi
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Advanced", 2); // bi
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bi
+// Elapsed time: 11 seconds
+setText(PAResourceItoN.IPIComponentName_COMPONENT_NAME, "o_ram_axi4_0"); // aa
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Customize Port"); // r
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, axi2wb_intcon_wrapper_0, o_ram_axi4]", 23, false, false, false, false, true, false); // a - Popup Trigger
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, axi2wb_intcon_wrapper_0, o_ram_axi4]", 23, false, false, false, false, true, false); // a - Popup Trigger
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property location {1029 -950} [get_bd_intf_ports o_ram_axi4_0]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'endgroup' INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_intf_pins axi2wb_intcon_wrapper_0/o_ram_axi4]' INFO: [Common 17-17] undo 'startgroup' 
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, axi2wb_intcon_wrapper_0, o_ram_axi4]", 20, false, false, false, false, true, false); // a - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 1,142 MB. GUI used memory: 107 MB. Current time: 10/8/23, 10:01:27 AM CST
+selectMenuItem(PAResourceCommand.PACommandNames_MAKE_CONNECTION, "Make Connection..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_MAKE_CONNECTION
+// HOptionPane Warning: 'There are no valid connections for '/axi2wb_intcon_wrapper_0/o_ram_axi4' (Make Connection)'
+// 'bq' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, axi2wb_intcon_wrapper_0, o_ram_axi4]", 20, false, false, false, false, true, false); // a - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_intf_pins_external  [get_bd_intf_pins axi2wb_intcon_wrapper_0/o_ram_axi4] 
+// Tcl Message: endgroup 
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, External Interfaces, o_ram_axi4_0]", 2, true, false, false, false, true, false); // a - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_HIERARCHY_BLOCK, "Diagram"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HIERARCHY_BLOCK
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, External Interfaces, o_ram_axi4_0]", 2, true, false, false, false, true, false); // a - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "External Interface Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+setText(PAResourceQtoS.RSBExternalInterfacePropPanels_NAME, (String) null); // aa
+setText(PAResourceQtoS.RSBExternalInterfacePropPanels_NAME, "ram", true); // aa
+// Tcl Command: 'set_property name ram [get_bd_intf_ports o_ram_axi4_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name ram [get_bd_intf_ports o_ram_axi4_0] 
+// RDIResource.RDIViews_PROPERTIES: External Interface Properties: close view
+// Tcl Command: 'set_property location {1022 -984} [get_bd_intf_ports ram]'
+// TclEventType: RSB_CANVAS_LOCATION
+// [GUI Memory]: 170 MB (+315kb) [00:14:14]
+// Tcl Message: set_property location {1022 -984} [get_bd_intf_ports ram] 
+// Elapsed time: 22 seconds
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, syscon_wrapper_0, AN]", 107, false, false, false, false, true, false); // a - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins syscon_wrapper_0/AN] 
+// Tcl Message: endgroup 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1555, 561, 2051, 956, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, syscon_wrapper_0, Digits_Bits]", 109, false, false, false, false, true, false); // a - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins syscon_wrapper_0/Digits_Bits] 
+// Tcl Message: endgroup 
+// Elapsed time: 12 seconds
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, syscon_wrapper_0, i_ram_init_done]", 113, false, false, false, false, true, false); // a - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins syscon_wrapper_0/i_ram_init_done] 
+// Tcl Message: endgroup 
+// Elapsed time: 18 seconds
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, syscon_wrapper_0, i_ram_init_error]", 156, false, false, false, false, true, false); // a - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins syscon_wrapper_0/i_ram_init_error] 
+// Tcl Message: endgroup 
+// Elapsed time: 20 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1555, 564, 2051, 956, false, false, false, true, false); // hv - Popup Trigger
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, wb_gpio_wrapper_0, bidir]", 173, false, false, false, false, true, false); // a - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins wb_gpio_wrapper_0/bidir] 
+// Tcl Message: endgroup 
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectMenuItem((HResource) null, "Assign"); // ak
+// Tcl Command: 'assign_bd_address -target_address_space /axi2wb_intcon_wrapper_0/o_ram_axi4 [get_bd_addr_segs ram/Reg] -force'
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address -target_address_space /axi2wb_intcon_wrapper_0/o_ram_axi4 [get_bd_addr_segs ram/Reg] -force 
+// Tcl Message: Slave segment '/ram/Reg' is being assigned into address space '/axi2wb_intcon_wrapper_0/o_ram_axi4' at <0x44A0_0000 [ 64K ]>. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,168 MB. GUI used memory: 112 MB. Current time: 10/8/23, 10:04:07 AM CST
+// Tcl Command: 'set_property range 128M [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_ram_axi4/SEG_ram_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property range 128M [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_ram_axi4/SEG_ram_Reg}] 
+// Tcl Command: 'set_property offset 0x00000000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_ram_axi4/SEG_ram_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property offset 0x00000000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_ram_axi4/SEG_ram_Reg}] 
+// Elapsed time: 35 seconds
+selectMenuItem((HResource) null, "Assign"); // ak
+// Tcl Command: 'assign_bd_address -target_address_space /swerv_wrapper_verilog_0/ifu_axi [get_bd_addr_segs axi2wb_intcon_wrapper_0/i_ifu_axi4/reg0] -force'
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address -target_address_space /swerv_wrapper_verilog_0/ifu_axi [get_bd_addr_segs axi2wb_intcon_wrapper_0/i_ifu_axi4/reg0] -force 
+// Tcl Message: Slave segment '/axi2wb_intcon_wrapper_0/i_ifu_axi4/reg0' is being assigned into address space '/swerv_wrapper_verilog_0/ifu_axi' at <0x0_0000_0000 [ 4G ]>. 
+selectMenuItem((HResource) null, "Assign"); // ak
+// Tcl Command: 'assign_bd_address -target_address_space /swerv_wrapper_verilog_0/lsu_axi [get_bd_addr_segs axi2wb_intcon_wrapper_0/i_lsu_axi4/reg0] -force'
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address -target_address_space /swerv_wrapper_verilog_0/lsu_axi [get_bd_addr_segs axi2wb_intcon_wrapper_0/i_lsu_axi4/reg0] -force 
+// Tcl Message: Slave segment '/axi2wb_intcon_wrapper_0/i_lsu_axi4/reg0' is being assigned into address space '/swerv_wrapper_verilog_0/lsu_axi' at <0x0_0000_0000 [ 4G ]>. 
+selectMenuItem((HResource) null, "Assign"); // ak
+// Tcl Command: 'assign_bd_address -target_address_space /swerv_wrapper_verilog_0/sb_axi [get_bd_addr_segs axi2wb_intcon_wrapper_0/i_sb_axi4/reg0] -force'
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address -target_address_space /swerv_wrapper_verilog_0/sb_axi [get_bd_addr_segs axi2wb_intcon_wrapper_0/i_sb_axi4/reg0] -force 
+// Tcl Message: Slave segment '/axi2wb_intcon_wrapper_0/i_sb_axi4/reg0' is being assigned into address space '/swerv_wrapper_verilog_0/sb_axi' at <0x0_0000_0000 [ 4G ]>. 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Users\R9000X\Desktop\jiekou_lab\lab1\RVfpga_Soc\RVfpga_Soc.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// Elapsed time: 11 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, swerv_soc (swerv_soc.bd)]", 5, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cr): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'af' command handler elapsed time: 6 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// bz (cr):  Create HDL Wrapper : addNotify
+// Tcl Message: make_wrapper -files [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -top 
+// Tcl Message: Wrote  : <C:\Users\R9000X\Desktop\jiekou_lab\lab1\RVfpga_Soc\RVfpga_Soc.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,327 MB (+141078kb) [00:17:24]
+// Tcl Message: VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v 
+// a (cr): Critical Messages: addNotify
+dismissDialog("Create HDL Wrapper"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,327 MB. GUI used memory: 111 MB. Current time: 10/8/23, 10:05:27 AM CST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 89 seconds
+selectTab((HResource) null, (HResource) null, "Design", 1); // aK
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1120 ms.
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Bitstream]", 5, false); // B
+// ar (d): Select A Tcl Script: addNotify
+selectButton(PAResourceOtoP.ProjectFileChooserPanel_NEW_SCRIPT, (String) null); // t
+setFileChooser("C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/lab_src/script.tcl");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Select A Tcl Script"); // ar
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset utils_1 -norecurse C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/lab_src/script.tcl 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// Tcl Message: set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/lab_src/script.tcl -of [get_fileset utils_1] ] [get_runs impl_1] 
+dismissDialog("Settings"); // d
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// HMemoryUtils.trashcanNow. Engine heap size: 1,347 MB. GUI used memory: 111 MB. Current time: 10/8/23, 10:07:42 AM CST
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// cD (cr): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 5 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: Wrote  : <C:\Users\R9000X\Desktop\jiekou_lab\lab1\RVfpga_Soc\RVfpga_Soc.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi2wb_intcon_wrapper_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block wb_gpio_wrapper_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block swerv_wrapper_verilog_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block bootrom_wrapper_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block syscon_wrapper_0 . 
+// TclEventType: RUN_ADD
+// Tcl Message: Exporting to file c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh Generated Block Design Tcl file c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc_bd.tcl Generated Hardware Definition File c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef 
+// Tcl Message: INFO: [IP_Flow 19-7066] Running IP cache check for IP swerv_soc_axi2wb_intcon_wrapper_0_0 INFO: [IP_Flow 19-7066] Running IP cache check for IP swerv_soc_swerv_wrapper_verilog_0_0 INFO: [IP_Flow 19-7066] Running IP cache check for IP swerv_soc_wb_gpio_wrapper_0_0 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1451.355 ; gain = 16.645 
+// bq (cr): Launch Run Critical Messages: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Launch Run Critical Messages"); // bq
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: open_bd_design {C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd} 
+dismissDialog("Open Block Design"); // bz
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1661, 300, 1853, 845, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ak
+// cW (cr): Add Module: addNotify
+// [Engine Memory]: 1,395 MB (+1428kb) [00:20:51]
+setText("PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD", (String) null); // OverlayTextField
+// [GUI Memory]: 181 MB (+3577kb) [00:21:07]
+// Elapsed time: 10 seconds
+setText("PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD", "AXI"); // OverlayTextField
+selectCheckBox(PAResourceQtoS.RSBAddModuleDialog_HIDE_INCOMPATIBLE_MODULES, "Hide incompatible modules", false); // g: FALSE
+selectCheckBox(PAResourceQtoS.RSBAddModuleDialog_HIDE_INCOMPATIBLE_MODULES, "Hide incompatible modules", true); // g: TRUE
+setText("PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD", (String) null); // OverlayTextField
+setText("PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD", "a"); // OverlayTextField
+// Elapsed time: 22 seconds
+setText("PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD", (String) null); // OverlayTextField
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Add Module"); // cW
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1594, 310, 1853, 845, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ak
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,398 MB. GUI used memory: 124 MB. Current time: 10/8/23, 10:10:17 AM CST
+// Elapsed time: 16 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi inter"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interconnect", 1, "AXI Interconnect", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interconnect", 1, "AXI Interconnect", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interconnect", 1); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interconnect", 1, "AXI Interconnect", 0, false, false, false, false, false, true); // L - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// bz (cr):  Add IP : addNotify
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: startgroup 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bz
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1521, 574, 1853, 845, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ak
+// HMemoryUtils.trashcanNow. Engine heap size: 1,445 MB. GUI used memory: 125 MB. Current time: 10/8/23, 10:10:32 AM CST
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi gp"); // OverlayTextField
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi gpio"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0, "AXI GPIO", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0, "AXI GPIO", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0, "AXI GPIO", 0, false, false, false, false, false, true); // L - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// bz (cr):  Add IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bz
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// [Engine Memory]: 1,466 MB (+1431kb) [00:22:47]
+dismissDialog("Re-customize IP"); // N
+selectComboBox("Number of Master Interfaces (NUM_MI)", "1", 0); // bY
+// HMemoryUtils.trashcanNow. Engine heap size: 1,470 MB. GUI used memory: 127 MB. Current time: 10/8/23, 10:10:52 AM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_0]'
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+dismissDialog("Re-customize IP"); // r
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.NUM_MI {1}] [get_bd_cells axi_interconnect_0] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+dismissDialog("Customize IP"); // bz
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // N
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize IP: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property location {4 1139 -589} [get_bd_cells axi_gpio_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1139 -589} [get_bd_cells axi_gpio_0] 
+// Tcl Command: 'set_property location {4 1156 -772} [get_bd_cells axi_interconnect_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1156 -772} [get_bd_cells axi_interconnect_0] 
+// Tcl Command: 'set_property location {1341 -953} [get_bd_intf_ports ram]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1341 -953} [get_bd_intf_ports ram] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_interconnect_0/ACLK] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_interconnect_0/S00_ACLK] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_interconnect_0/M00_ACLK] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_gpio_0/s_axi_aclk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_interconnect_0/ARESETN] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_interconnect_0/S00_ARESETN] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_interconnect_0/M00_ARESETN] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_gpio_0/s_axi_aresetn] 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI] 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins axi2wb_intcon_wrapper_0/o_user_axi4] 
+// [GUI Memory]: 194 MB (+3420kb) [00:23:55]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize IP: addNotify
+// Elapsed time: 55 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // bi
+selectCheckBox((HResource) null, "All Outputs", true); // g: TRUE
+setText("GPIO Width", "16"); // B
+selectCheckBox((HResource) null, "Enable Dual Channel", true); // g: TRUE
+selectCheckBox((HResource) null, "All Inputs", true); // g: TRUE
+setText("GPIO Width", "16"); // B
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.C_GPIO_WIDTH {16} CONFIG.C_GPIO2_WIDTH {16} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]'
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_GPIO_WIDTH {16} CONFIG.C_GPIO2_WIDTH {16} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0] 
+// Tcl Message: endgroup 
+// Elapsed time: 13 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1498, 598, 1853, 845, false, false, false, true, false); // hv - Popup Trigger
+selectTab((HResource) null, (HResource) null, "Design", 1); // aK
+expandTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, axi_gpio_0]", 154); // a
+// TclEventType: FILE_SET_CHANGE
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1498, 597, 1853, 845, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins axi_gpio_0/gpio_io_o] 
+// Tcl Message: endgroup 
+// TclEventType: FILE_SET_CHANGE
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1500, 651, 1853, 845, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_0/GPIO2] 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'endgroup' INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_0/GPIO2]' INFO: [Common 17-17] undo 'startgroup' 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1501, 574, 1853, 846, false, false, false, true, false); // hv - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 1,488 MB. GUI used memory: 135 MB. Current time: 10/8/23, 10:13:12 AM CST
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_0/GPIO2] 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'endgroup' INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_0/GPIO2]' INFO: [Common 17-17] undo 'startgroup' 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1495, 576, 1853, 846, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_0/GPIO2] 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'endgroup' INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_intf_pins axi_gpio_0/GPIO2]' INFO: [Common 17-17] undo 'startgroup' 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1503, 574, 1853, 846, false, false, false, true, false); // hv - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1498, 572, 1853, 846, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins axi_gpio_0/gpio2_io_i] 
+// Tcl Message: endgroup 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1688, 515, 1853, 846, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectTab((HResource) null, (HResource) null, "Signals", 2); // aK
+selectTab((HResource) null, (HResource) null, "Board", 3); // aK
+selectTab((HResource) null, (HResource) null, "Design", 1); // aK
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[swerv_soc, Ports, gpio_io_o_0]", 23, false, false, false, false, true, false); // a - Popup Trigger
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 753, 30); // dS
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1678, 517, 1853, 846, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "External Port Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Elapsed time: 10 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "o_led", true); // aa
+// Tcl Command: 'set_property name o_led [get_bd_ports gpio_io_o_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name o_led [get_bd_ports gpio_io_o_0] 
+// Elapsed time: 16 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "i_sw", true); // aa
+// Tcl Command: 'set_property name i_sw [get_bd_ports gpio2_io_i_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name i_sw [get_bd_ports gpio2_io_i_0] 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectMenuItem((HResource) null, "Assign"); // ak
+// Tcl Command: 'assign_bd_address -target_address_space /axi2wb_intcon_wrapper_0/o_user_axi4 [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force'
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address -target_address_space /axi2wb_intcon_wrapper_0/o_user_axi4 [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force 
+// Tcl Message: Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/axi2wb_intcon_wrapper_0/o_user_axi4' at <0x4000_0000 [ 64K ]>. 
+// Tcl Command: 'set_property offset 0x80100000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_user_axi4/SEG_axi_gpio_0_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property offset 0x80100000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_user_axi4/SEG_axi_gpio_0_Reg}] 
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // E
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// bz (cr):  Validate Design : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// dR (cr): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dR
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // E
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// 'dP' command handler elapsed time: 3 seconds
+// Tcl Command: 'validate_bd_design -force'
+selectButton("OptionPane.button", "Rerun Validate Design"); // JButton
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// bz (cr):  Validate Design : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: validate_bd_design -force 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// dR (cr): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dR
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "Generate"); // OverlayTextField
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: Wrote  : <C:\Users\R9000X\Desktop\jiekou_lab\lab1\RVfpga_Soc\RVfpga_Soc.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . 
+// Tcl Message: Exporting to file c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh Generated Block Design Tcl file c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc_bd.tcl Generated Hardware Definition File c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] } 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] } 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_axi_gpio_0_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs swerv_soc_syscon_wrapper_0_0_synth_1 swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 swerv_soc_axi_gpio_0_0_synth_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// 'br' command handler elapsed time: 30 seconds
+// a (cr): Critical Messages: addNotify
+// Elapsed time: 28 seconds
+dismissDialog("Managing Output Products"); // bz
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'swerv_soc' - hence not re-generating. 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] } 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] } 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,537 MB. GUI used memory: 137 MB. Current time: 10/8/23, 10:16:57 AM CST
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs swerv_soc_syscon_wrapper_0_0_synth_1 swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 -jobs 8 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// [Engine Memory]: 1,539 MB (+61kb) [00:28:58]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Oct  8 10:17:00 2023] Launched swerv_soc_syscon_wrapper_0_0_synth_1, swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1... Run output will be captured here: swerv_soc_syscon_wrapper_0_0_synth_1: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_syscon_wrapper_0_0_synth_1/runme.log swerv_soc_auto_ds_0_synth_1: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_auto_ds_0_synth_1/runme.log swerv_soc_auto_pc_0_synth_1: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_auto_pc_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// 'br' command handler elapsed time: 28 seconds
+// Elapsed time: 27 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), cdc : axi_cdc_intf (axi_cdc.sv)]", 5, true, false, false, false, false, true); // D - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,561 MB. GUI used memory: 139 MB. Current time: 10/8/23, 10:17:32 AM CST
+// Elapsed time: 10 seconds
+selectCodeEditor("rvfpga.sv", 62, 334); // bP
+selectCodeEditor("rvfpga.sv", 62, 353); // bP
+selectCodeEditor("rvfpga.sv", 418, 457); // bP
+selectCodeEditor("rvfpga.sv", 33, 565); // bP
+selectCodeEditor("rvfpga.sv", 28, 609); // bP
+selectCodeEditor("rvfpga.sv", 126, 615); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run swerv_soc_syscon_wrapper_0_0_synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_RESET
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-7066] Running IP cache check for IP swerv_soc_auto_ds_0 INFO: [IP_Flow 19-7066] Running IP cache check for IP swerv_soc_auto_pc_0 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 351 seconds
+selectCodeEditor("rvfpga.sv", 993, 256); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run swerv_soc_syscon_wrapper_0_0_synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Oct  8 10:24:00 2023] Launched swerv_soc_syscon_wrapper_0_0_synth_1, synth_1... Run output will be captured here: swerv_soc_syscon_wrapper_0_0_synth_1: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_syscon_wrapper_0_0_synth_1/runme.log synth_1: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/synth_1/runme.log [Sun Oct  8 10:24:00 2023] Launched impl_1... Run output will be captured here: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'swerv_soc' - hence not re-generating. 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// [GUI Memory]: 204 MB (+409kb) [00:36:03]
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs swerv_soc_syscon_wrapper_0_0_synth_1 -jobs 8 
+// Tcl Message: [Sun Oct  8 10:24:05 2023] Launched swerv_soc_syscon_wrapper_0_0_synth_1... Run output will be captured here: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_syscon_wrapper_0_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// 'br' command handler elapsed time: 28 seconds
+// Elapsed time: 27 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), cdc : axi_cdc_intf (axi_cdc.sv)]", 5, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("rvfpga.sv", 1761, 121); // bP
