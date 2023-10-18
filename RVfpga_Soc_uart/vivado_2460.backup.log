@@ -1,0 +1,385 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 12 19:12:41 2023
+# Process ID: 2460
+# Current directory: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24508 C:\Users\R9000X\Desktop\jiekou_lab\lab2\RVfpga_Soc_uart\RVfpga_Soc.xpr
+# Log file: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/vivado.log
+# Journal file: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab2/ip_rope'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.660 ; gain = 0.000
+open_bd_design {C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+Reading block design file <C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>...
+Adding component instance block -- xilinx.com:user:axi2wb_intcon_wrapper:1.0 - axi2wb_intcon_wrapper_0
+Adding component instance block -- xilinx.com:user:wb_gpio_wrapper:1.0 - wb_gpio_wrapper_0
+Adding component instance block -- xilinx.com:user:swerv_wrapper_verilog:1.0 - swerv_wrapper_verilog_0
+Adding component instance block -- xilinx.com:module_ref:bootrom_wrapper:1.0 - bootrom_wrapper_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:module_ref:wb_uart_wrapper:1.0 - wb_uart_wrapper_0
+Adding component instance block -- xilinx.com:module_ref:syscon_wrapper:1.0 - syscon_wrapper_0
+Successfully read diagram <swerv_soc> from block design file <C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1020.488 ; gain = 1.828
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_nets axi2wb_intcon_wrapper_0_wb_uart_adr_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_uart_dat_o] [get_bd_nets wb_uart_wrapper_0_wb_dat_o] [get_bd_nets i_uart_rx_0_1] [get_bd_nets axi2wb_intcon_wrapper_0_wb_uart_we_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_uart_stb_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_uart_cyc_o] [get_bd_nets axi2wb_intcon_wrapper_0_wb_uart_sel_o] [get_bd_nets wb_uart_wrapper_0_wb_ack_o] [get_bd_nets wb_uart_wrapper_0_o_uart_tx] [get_bd_cells wb_uart_wrapper_0]
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uart16550:2.0 axi_uart16550_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.NUM_MI {2}] [get_bd_cells axi_interconnect_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+delete_bd_objs [get_bd_ports o_uart_tx]
+set_property location {4 1321 -335} [get_bd_cells axi_uart16550_0]
+set_property location {5 1529 -638} [get_bd_cells axi_uart16550_0]
+expected number but got ""
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.CONST_VAL' method. expected number but got ""
+expected number but got ""
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.CONST_VAL' method. expected number but got ""
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins axi_uart16550_0/freeze] [get_bd_pins xlconstant_0/dout]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI] [get_bd_intf_pins axi_uart16550_0/S_AXI]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_uart16550_0/s_axi_aclk]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_uart16550_0/s_axi_aresetn]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_interconnect_0/M01_ACLK]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_interconnect_0/M01_ARESETN]
+connect_bd_net [get_bd_pins axi_uart16550_0/sin] [get_bd_pins axi_uart16550_0/rxrdyn]
+WARNING: [BD 41-1306] The connection to interface pin </axi_uart16550_0/sin> is being overridden by the user with net <axi_uart16550_0_rxrdyn>. This pin will not be connected as a part of interface connection <UART>.
+WARNING: [BD 41-1306] The connection to interface pin </axi_uart16550_0/rxrdyn> is being overridden by the user with net <axi_uart16550_0_rxrdyn>. This pin will not be connected as a part of interface connection <UART>.
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_uart16550_0/sin] [get_bd_pins axi_uart16550_0/rxrdyn]'
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uart16550_0/sin]
+WARNING: [BD 41-1306] The connection to interface pin </axi_uart16550_0/sin> is being overridden by the user with net <sin_0_1>. This pin will not be connected as a part of interface connection <UART>.
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_pins_external  [get_bd_pins axi_uart16550_0/sin]'
+INFO: [Common 17-17] undo 'startgroup'
+connect_bd_net [get_bd_ports i_uart_rx] [get_bd_pins axi_uart16550_0/sin]
+WARNING: [BD 41-1306] The connection to interface pin </axi_uart16550_0/sin> is being overridden by the user with net <i_uart_rx_1>. This pin will not be connected as a part of interface connection <UART>.
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uart16550_0/sout]
+WARNING: [BD 41-1306] The connection to interface pin </axi_uart16550_0/sout> is being overridden by the user with net <axi_uart16550_0_sout>. This pin will not be connected as a part of interface connection <UART>.
+endgroup
+set_property name o_uart_tx [get_bd_ports sout_0]
+assign_bd_address -target_address_space /axi2wb_intcon_wrapper_0/o_user_axi4 [get_bd_addr_segs axi_uart16550_0/S_AXI/Reg] -force
+Slave segment '/axi_uart16550_0/S_AXI/Reg' is being assigned into address space '/axi2wb_intcon_wrapper_0/o_user_axi4' at <0x44A0_0000 [ 64K ]>.
+set_property offset 0x80110000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_user_axi4/SEG_axi_uart16550_0_Reg}]
+validate_bd_design
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+generate_target all [get_files  C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+Wrote  : <C:\Users\R9000X\Desktop\jiekou_lab\lab2\RVfpga_Soc_uart\RVfpga_Soc.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v
+VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v
+VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab2/ip_rope'.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uart16550_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+Exporting to file c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh
+Generated Block Design Tcl file c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc_bd.tcl
+Generated Hardware Definition File c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef
+generate_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1490.586 ; gain = 183.672
+catch { config_ip_cache -export [get_ips -all swerv_soc_xbar_0] }
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP swerv_soc_auto_ds_0, cache-ID = 75eaa10d31118a0a; cache size = 73.712 MB.
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP swerv_soc_auto_pc_0, cache-ID = d1cd9db01302540a; cache size = 73.712 MB.
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi_uart16550_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+launch_runs swerv_soc_xbar_0_synth_1 swerv_soc_axi_uart16550_0_0_synth_1 -jobs 8
+[Thu Oct 12 19:20:54 2023] Launched swerv_soc_xbar_0_synth_1, swerv_soc_axi_uart16550_0_0_synth_1...
+Run output will be captured here:
+swerv_soc_xbar_0_synth_1: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.runs/swerv_soc_xbar_0_synth_1/runme.log
+swerv_soc_axi_uart16550_0_0_synth_1: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.runs/swerv_soc_axi_uart16550_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.ip_user_files -ipstatic_source_dir C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/modelsim} {questa=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/questa} {riviera=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/riviera} {activehdl=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Oct 12 19:22:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.runs/synth_1/runme.log
+[Thu Oct 12 19:22:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1805.512 ; gain = 2.961
+INFO: [Netlist 29-17] Analyzing 1560 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2715.746 ; gain = 24.113
+Restored from archive | CPU: 5.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2715.746 ; gain = 24.113
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2715.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 91 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 72 instances
+
+open_run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 2854.824 ; gain = 1310.484
+open_report: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 3122.293 ; gain = 215.676
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Oct 12 19:36:31 2023] Launched impl_1...
+Run output will be captured here: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.runs/impl_1/runme.log
+open_bd_design {C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+validate_bd_design -force
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+validate_bd_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 3236.090 ; gain = 10.008
+save_bd_design
+Wrote  : <C:\Users\R9000X\Desktop\jiekou_lab\lab2\RVfpga_Soc_uart\RVfpga_Soc.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+Wrote  : <C:\Users\R9000X\Desktop\jiekou_lab\lab2\RVfpga_Soc_uart\RVfpga_Soc.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v
+VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v
+VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh
+Generated Block Design Tcl file c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc_bd.tcl
+Generated Hardware Definition File c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP swerv_soc_auto_ds_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP swerv_soc_auto_pc_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP swerv_soc_auto_ds_0, cache-ID = 75eaa10d31118a0a; cache size = 74.888 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP swerv_soc_auto_pc_0, cache-ID = d1cd9db01302540a; cache size = 74.888 MB.
+[Thu Oct 12 19:52:10 2023] Launched synth_1...
+Run output will be captured here: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.runs/synth_1/runme.log
+[Thu Oct 12 19:52:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3238.113 ; gain = 2.023
+validate_bd_design -force
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+validate_bd_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 3239.555 ; gain = 1.441
+generate_target all [get_files  C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+Wrote  : <C:\Users\R9000X\Desktop\jiekou_lab\lab2\RVfpga_Soc_uart\RVfpga_Soc.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v
+VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v
+VHDL Output written to : c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh
+Generated Block Design Tcl file c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc_bd.tcl
+Generated Hardware Definition File c:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP swerv_soc_auto_ds_0, cache-ID = 75eaa10d31118a0a; cache size = 74.888 MB.
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP swerv_soc_auto_pc_0, cache-ID = d1cd9db01302540a; cache size = 74.888 MB.
+export_ip_user_files -of_objects [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+export_simulation -of_objects [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.ip_user_files -ipstatic_source_dir C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/modelsim} {questa=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/questa} {riviera=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/riviera} {activehdl=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'swerv_soc' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+export_simulation -of_objects [get_files C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.ip_user_files -ipstatic_source_dir C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/modelsim} {questa=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/questa} {riviera=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/riviera} {activehdl=C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Oct 12 20:04:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.runs/synth_1/runme.log
+[Thu Oct 12 20:04:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.runs/impl_1/runme.log
+validate_bd_design -force
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+validate_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 3283.633 ; gain = 0.000
+save_bd_design
+Wrote  : <C:\Users\R9000X\Desktop\jiekou_lab\lab2\RVfpga_Soc_uart\RVfpga_Soc.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 12 21:04:49 2023...

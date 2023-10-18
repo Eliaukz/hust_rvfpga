@@ -1,0 +1,211 @@
+vlib questa_lib/work
+vlib questa_lib/msim
+
+vlib questa_lib/msim/xpm
+vlib questa_lib/msim/xil_defaultlib
+vlib questa_lib/msim/axi_lite_ipif_v3_0_4
+vlib questa_lib/msim/lib_cdc_v1_0_2
+vlib questa_lib/msim/interrupt_control_v3_1_4
+vlib questa_lib/msim/axi_gpio_v2_0_24
+vlib questa_lib/msim/generic_baseblocks_v2_1_0
+vlib questa_lib/msim/axi_infrastructure_v1_1_0
+vlib questa_lib/msim/axi_register_slice_v2_1_22
+vlib questa_lib/msim/fifo_generator_v13_2_5
+vlib questa_lib/msim/axi_data_fifo_v2_1_21
+vlib questa_lib/msim/axi_crossbar_v2_1_23
+vlib questa_lib/msim/lib_pkg_v1_0_2
+vlib questa_lib/msim/lib_srl_fifo_v1_0_2
+vlib questa_lib/msim/axi_uart16550_v2_0_24
+vlib questa_lib/msim/xlconstant_v1_1_7
+vlib questa_lib/msim/axi_protocol_converter_v2_1_22
+vlib questa_lib/msim/axi_clock_converter_v2_1_21
+vlib questa_lib/msim/blk_mem_gen_v8_4_4
+vlib questa_lib/msim/axi_dwidth_converter_v2_1_22
+
+vmap xpm questa_lib/msim/xpm
+vmap xil_defaultlib questa_lib/msim/xil_defaultlib
+vmap axi_lite_ipif_v3_0_4 questa_lib/msim/axi_lite_ipif_v3_0_4
+vmap lib_cdc_v1_0_2 questa_lib/msim/lib_cdc_v1_0_2
+vmap interrupt_control_v3_1_4 questa_lib/msim/interrupt_control_v3_1_4
+vmap axi_gpio_v2_0_24 questa_lib/msim/axi_gpio_v2_0_24
+vmap generic_baseblocks_v2_1_0 questa_lib/msim/generic_baseblocks_v2_1_0
+vmap axi_infrastructure_v1_1_0 questa_lib/msim/axi_infrastructure_v1_1_0
+vmap axi_register_slice_v2_1_22 questa_lib/msim/axi_register_slice_v2_1_22
+vmap fifo_generator_v13_2_5 questa_lib/msim/fifo_generator_v13_2_5
+vmap axi_data_fifo_v2_1_21 questa_lib/msim/axi_data_fifo_v2_1_21
+vmap axi_crossbar_v2_1_23 questa_lib/msim/axi_crossbar_v2_1_23
+vmap lib_pkg_v1_0_2 questa_lib/msim/lib_pkg_v1_0_2
+vmap lib_srl_fifo_v1_0_2 questa_lib/msim/lib_srl_fifo_v1_0_2
+vmap axi_uart16550_v2_0_24 questa_lib/msim/axi_uart16550_v2_0_24
+vmap xlconstant_v1_1_7 questa_lib/msim/xlconstant_v1_1_7
+vmap axi_protocol_converter_v2_1_22 questa_lib/msim/axi_protocol_converter_v2_1_22
+vmap axi_clock_converter_v2_1_21 questa_lib/msim/axi_clock_converter_v2_1_21
+vmap blk_mem_gen_v8_4_4 questa_lib/msim/blk_mem_gen_v8_4_4
+vmap axi_dwidth_converter_v2_1_22 questa_lib/msim/axi_dwidth_converter_v2_1_22
+
+vlog -work xpm  -sv "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+vcom -work xpm  -93 \
+"E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vlog -work xil_defaultlib  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../bd/swerv_soc/ipshared/9426/axi2wb.v" \
+"../../../bd/swerv_soc/ipshared/9426/axi_intercon_wr.v" \
+"../../../bd/swerv_soc/ipshared/9426/wb_intercon.v" \
+"../../../bd/swerv_soc/ipshared/9426/wb_mux.v" \
+
+vlog -work xil_defaultlib  -sv "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../bd/swerv_soc/ipshared/9426/cf_math_pkg.sv" \
+"../../../bd/swerv_soc/ipshared/9426/addr_decode.sv" \
+"../../../bd/swerv_soc/ipshared/9426/axi_pkg.sv" \
+"../../../bd/swerv_soc/ipshared/9426/axi_atop_filter.sv" \
+"../../../bd/swerv_soc/ipshared/9426/axi_demux.sv" \
+"../../../bd/swerv_soc/ipshared/9426/axi_err_slv.sv" \
+"../../../bd/swerv_soc/ipshared/9426/axi_id_prepend.sv" \
+"../../../bd/swerv_soc/ipshared/9426/axi_intercon.sv" \
+"../../../bd/swerv_soc/ipshared/9426/axi_mux.sv" \
+"../../../bd/swerv_soc/ipshared/9426/axi_xbar.sv" \
+"../../../bd/swerv_soc/ipshared/9426/counter.sv" \
+"../../../bd/swerv_soc/ipshared/9426/delta_counter.sv" \
+"../../../bd/swerv_soc/ipshared/9426/fifo_v3.sv" \
+"../../../bd/swerv_soc/ipshared/9426/lzc.sv" \
+"../../../bd/swerv_soc/ipshared/9426/rr_arb_tree.sv" \
+"../../../bd/swerv_soc/ipshared/9426/spill_register.sv" \
+"../../../bd/swerv_soc/ipshared/9426/stream_register.sv" \
+
+vlog -work xil_defaultlib  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_axi2wb_intcon_wrapper_0_0/sim/swerv_soc_axi2wb_intcon_wrapper_0_0.v" \
+"../../../bd/swerv_soc/ipshared/736f/gpio_top.v" \
+"../../../bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/sim/swerv_soc_wb_gpio_wrapper_0_0.v" \
+
+vlog -work xil_defaultlib  -sv "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/swerv_types.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/dec/dec.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/dec/dec_gpr_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/dec/dec_trigger.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/dma/dma_ctrl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/exu/exu.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/exu/exu_alu_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/exu/exu_div_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ic_mem.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_addrcheck.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_bus_buffer.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_bus_intf.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_clkdomain.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_dccm_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_dccm_mem.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_ecc.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_lsc_ctl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_stbuf.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lsu/lsu_trigger.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/mem.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/lib/mem_lib.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/pic/pic_ctrl.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/swerv.sv" \
+"../../../bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_dmi.sv" \
+
+vlog -work xil_defaultlib  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_verilog.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/sim/swerv_soc_swerv_wrapper_verilog_0_0.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/sim/swerv_soc_bootrom_wrapper_0_0.v" \
+
+vcom -work axi_lite_ipif_v3_0_4  -93 \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vcom -work lib_cdc_v1_0_2  -93 \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vcom -work interrupt_control_v3_1_4  -93 \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+
+vcom -work axi_gpio_v2_0_24  -93 \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/4318/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib  -93 \
+"../../../bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/sim/swerv_soc_axi_gpio_0_0.vhd" \
+
+vlog -work xil_defaultlib  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/sim/swerv_soc_syscon_wrapper_0_0.v" \
+"../../../bd/swerv_soc/sim/swerv_soc.v" \
+
+vlog -work generic_baseblocks_v2_1_0  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+
+vlog -work axi_infrastructure_v1_1_0  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+
+vlog -work axi_register_slice_v2_1_22  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+
+vlog -work fifo_generator_v13_2_5  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/276e/simulation/fifo_generator_vlog_beh.v" \
+
+vcom -work fifo_generator_v13_2_5  -93 \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/276e/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vlog -work fifo_generator_v13_2_5  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/276e/hdl/fifo_generator_v13_2_rfs.v" \
+
+vlog -work axi_data_fifo_v2_1_21  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
+
+vlog -work axi_crossbar_v2_1_23  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../bd/swerv_soc/ip/swerv_soc_xbar_0/sim/swerv_soc_xbar_0.v" \
+
+vcom -work lib_pkg_v1_0_2  -93 \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vcom -work lib_srl_fifo_v1_0_2  -93 \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
+
+vcom -work axi_uart16550_v2_0_24  -93 \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/df78/hdl/axi_uart16550_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib  -93 \
+"../../../bd/swerv_soc/ip/swerv_soc_axi_uart16550_0_0/sim/swerv_soc_axi_uart16550_0_0.vhd" \
+
+vlog -work xlconstant_v1_1_7  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../bd/swerv_soc/ip/swerv_soc_xlconstant_0_0/sim/swerv_soc_xlconstant_0_0.v" \
+
+vlog -work axi_protocol_converter_v2_1_22  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+vlog -work axi_clock_converter_v2_1_21  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+
+vlog -work blk_mem_gen_v8_4_4  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
+
+vlog -work axi_dwidth_converter_v2_1_22  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f" "+incdir+../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" \
+"../../../bd/swerv_soc/ip/swerv_soc_auto_ds_0/sim/swerv_soc_auto_ds_0.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_auto_pc_0/sim/swerv_soc_auto_pc_0.v" \
+
+vlog -work xil_defaultlib \
+"glbl.v"
+

@@ -1,0 +1,95 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.2303",
+   "Default View_TopLeft":"241,-1131",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port ram -pg 1 -lvl 6 -x 1750 -y -950 -defaultsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x -660 -y -780 -defaultsOSRD
+preplace port dmi_hard_reset_0 -pg 1 -lvl 0 -x -660 -y -580 -defaultsOSRD
+preplace port dmi_reg_en_0 -pg 1 -lvl 0 -x -660 -y -660 -defaultsOSRD
+preplace port dmi_reg_wr_en_0 -pg 1 -lvl 0 -x -660 -y -620 -defaultsOSRD
+preplace port rst_0 -pg 1 -lvl 0 -x -660 -y -760 -defaultsOSRD
+preplace port i_ram_init_done_0 -pg 1 -lvl 0 -x -660 -y -520 -defaultsOSRD
+preplace port i_ram_init_error_0 -pg 1 -lvl 0 -x -660 -y -500 -defaultsOSRD
+preplace port i_uart_rx -pg 1 -lvl 0 -x -660 -y -110 -defaultsOSRD
+preplace port o_uart_tx -pg 1 -lvl 6 -x 1750 -y -410 -defaultsOSRD
+preplace portBus dmi_reg_addr_0 -pg 1 -lvl 0 -x -660 -y -640 -defaultsOSRD
+preplace portBus dmi_reg_rdata_0 -pg 1 -lvl 6 -x 1750 -y -650 -defaultsOSRD
+preplace portBus dmi_reg_wdata_0 -pg 1 -lvl 0 -x -660 -y -600 -defaultsOSRD
+preplace portBus extintsrc_req_0 -pg 1 -lvl 0 -x -660 -y -680 -defaultsOSRD
+preplace portBus AN_0 -pg 1 -lvl 6 -x 1750 -y -450 -defaultsOSRD
+preplace portBus Digits_Bits_0 -pg 1 -lvl 6 -x 1750 -y -430 -defaultsOSRD
+preplace portBus bidir -pg 1 -lvl 6 -x 1750 -y 150 -defaultsOSRD
+preplace portBus o_led -pg 1 -lvl 6 -x 1750 -y -590 -defaultsOSRD
+preplace portBus i_sw -pg 1 -lvl 0 -x -660 -y -550 -defaultsOSRD
+preplace inst axi2wb_intcon_wrapper_0 -pg 1 -lvl 2 -x 200 -y -410 -defaultsOSRD
+preplace inst wb_gpio_wrapper_0 -pg 1 -lvl 3 -x 800 -y 110 -defaultsOSRD
+preplace inst swerv_wrapper_verilog_0 -pg 1 -lvl 1 -x -400 -y -680 -defaultsOSRD
+preplace inst bootrom_wrapper_0 -pg 1 -lvl 3 -x 800 -y -820 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1240 -y -770 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 1240 -y -560 -defaultsOSRD
+preplace inst syscon_wrapper_0 -pg 1 -lvl 3 -x 800 -y -490 -defaultsOSRD
+preplace inst axi_uart16550_0 -pg 1 -lvl 5 -x 1570 -y -640 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -x 1570 -y -850 -defaultsOSRD
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_adr_o 1 2 1 540 -900n
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_dat_o 1 2 1 520 -880n
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_sel_o 1 2 1 500 -860n
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_we_o 1 2 1 490 -840n
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_cyc_o 1 2 1 480 -820n
+preplace netloc axi2wb_intcon_wrapper_0_wb_spi_flash_adr_o 1 2 1 470 -780n
+preplace netloc bootrom_wrapper_0_o_wb_ack 1 1 3 -180 -1120 NJ -1120 980
+preplace netloc bootrom_wrapper_0_o_wb_rdt 1 1 3 -160 -1100 NJ -1100 970
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_adr_o 1 2 1 440 -620n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_dat_o 1 2 1 430 -600n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_sel_o 1 2 1 420 -580n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_we_o 1 2 1 410 -560n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_cyc_o 1 2 1 400 -540n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_stb_o 1 2 1 390 -520n
+preplace netloc syscon_wrapper_0_o_wb_ack 1 1 3 -170 -1030 NJ -1030 990
+preplace netloc syscon_wrapper_0_o_wb_rdt 1 1 3 -150 -1020 NJ -1020 960
+preplace netloc syscon_wrapper_0_o_nmi_int 1 0 4 -570 -1080 NJ -1080 NJ -1080 1000
+preplace netloc syscon_wrapper_0_o_nmi_vec 1 0 4 -590 -1110 NJ -1110 NJ -1110 1010
+preplace netloc syscon_wrapper_0_o_timer_irq 1 0 4 -580 -1040 NJ -1040 NJ -1040 950
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_adr_o 1 2 1 440 -300n
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_dat_o 1 2 1 430 -280n
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_sel_o 1 2 1 410 -260n
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_we_o 1 2 1 400 -240n
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_cyc_o 1 2 1 420 -220n
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_stb_o 1 2 1 390 -200n
+preplace netloc wb_gpio_wrapper_0_wb_dat_o 1 1 3 -160 240 NJ 240 960
+preplace netloc wb_gpio_wrapper_0_wb_ack_o 1 1 3 -170 270 NJ 270 980
+preplace netloc wb_gpio_wrapper_0_wb_err_o 1 1 3 -150 250 NJ 250 950
+preplace netloc wb_gpio_wrapper_0_wb_inta_o 1 2 2 540 -660 970
+preplace netloc clk_0_1 1 0 5 -610J -520 -220 -1010 460 -970 1030 -460 1410
+preplace netloc dmi_hard_reset_0_1 1 0 1 NJ -580
+preplace netloc dmi_reg_addr_0_1 1 0 1 NJ -640
+preplace netloc dmi_reg_en_0_1 1 0 1 NJ -660
+preplace netloc swerv_wrapper_verilog_0_dmi_reg_rdata 1 1 5 -240J -1050 NJ -1050 NJ -1050 N -1050 1700
+preplace netloc dmi_reg_wdata_0_1 1 0 1 NJ -600
+preplace netloc dmi_reg_wr_en_0_1 1 0 1 NJ -620
+preplace netloc extintsrc_req_0_1 1 0 1 NJ -680
+preplace netloc rst_0_1 1 0 5 -630J -510 -200 -1000 450 -690 1040 -450 1430
+preplace netloc syscon_wrapper_0_AN 1 3 3 1010 -440 1440 -450 N
+preplace netloc syscon_wrapper_0_Digits_Bits 1 3 3 N -430 N -430 N
+preplace netloc i_ram_init_done_0_1 1 0 3 -620J -1070 NJ -1070 530J
+preplace netloc i_ram_init_error_0_1 1 0 3 -600J -1060 NJ -1060 510J
+preplace netloc wb_gpio_wrapper_0_bidir 1 3 3 N 150 N 150 N
+preplace netloc axi_gpio_0_gpio_io_o 1 4 2 1420 -550 1710
+preplace netloc gpio2_io_i_0_1 1 0 5 -640J -1090 NJ -1090 NJ -1090 NJ -1090 1400
+preplace netloc xlconstant_0_dout 1 4 2 1440 -910 1690
+preplace netloc i_uart_rx_1 1 0 6 NJ -110 -210J 260 NJ 260 NJ 260 NJ 260 1690
+preplace netloc axi_uart16550_0_sout 1 5 1 1700 -630n
+preplace netloc S00_AXI_1 1 2 2 390 -960 1020J
+preplace netloc swerv_wrapper_verilog_0_lsu_axi 1 1 1 -210 -690n
+preplace netloc axi_interconnect_0_M00_AXI 1 3 2 1050 -470 1390
+preplace netloc swerv_wrapper_verilog_0_ifu_axi 1 1 1 -190 -710n
+preplace netloc swerv_wrapper_verilog_0_sb_axi 1 1 1 -230 -670n
+preplace netloc axi2wb_intcon_wrapper_0_o_ram_axi4 1 2 4 410J -950 NJ -950 N -950 N
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1430 -760n
+levelinfo -pg 1 -660 -400 200 800 1240 1570 1750
+pagesize -pg 1 -db -bbox -sgen -860 -1490 1950 1180
+"
+}
+0

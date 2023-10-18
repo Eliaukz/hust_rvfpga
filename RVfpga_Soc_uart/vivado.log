@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 18 19:24:30 2023
+# Process ID: 3472
+# Current directory: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12168 C:\Users\R9000X\Desktop\jiekou_lab\lab2\RVfpga_Soc_uart\RVfpga_Soc.xpr
+# Log file: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/vivado.log
+# Journal file: C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab2/ip_rope'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1019.570 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+Reading block design file <C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>...
+Adding component instance block -- xilinx.com:user:axi2wb_intcon_wrapper:1.0 - axi2wb_intcon_wrapper_0
+Adding component instance block -- xilinx.com:user:wb_gpio_wrapper:1.0 - wb_gpio_wrapper_0
+Adding component instance block -- xilinx.com:user:swerv_wrapper_verilog:1.0 - swerv_wrapper_verilog_0
+Adding component instance block -- xilinx.com:module_ref:bootrom_wrapper:1.0 - bootrom_wrapper_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:module_ref:syscon_wrapper:1.0 - syscon_wrapper_0
+Adding component instance block -- xilinx.com:ip:axi_uart16550:2.0 - axi_uart16550_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Successfully read diagram <swerv_soc> from block design file <C:/Users/R9000X/Desktop/jiekou_lab/lab2/RVfpga_Soc_uart/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1096.867 ; gain = 77.297
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 18 20:07:12 2023...
