@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1696734179">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1698673750">
   <File Type="BITSTR-BMM" Name="rvfpga_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="rvfpga_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="rvfpga_timing_summary_init.rpt"/>
@@ -120,6 +120,82 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../rtl_src/SystemController/syscon_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/raminfr.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/uart_defines.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/uart_receiver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/uart_regs.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/uart_rfifo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/uart_sync_flops.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/uart_tfifo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/uart_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/uart_transmitter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/uart_wb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/wb_uart_wrapper.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -346,13 +422,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../rtl_src/LiteDRAM/litedram_core.init"/>
     <File Path="$PPRDIR/../rtl_src/BootROM/sw/boot_main.mem">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../rtl_src/LiteDRAM/litedram_core.init"/>
     <File Path="$PPRDIR/../rtl_src/LiteDRAM/mem_1.init"/>
     <File Path="$PPRDIR/../rtl_src/BootROM/sw/boot_main.vh">
       <FileInfo>
@@ -387,7 +463,7 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
-    <File Path="$PPRDIR/lab_src/script.tcl">
+    <File Path="$PPRDIR/script.tcl">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -400,9 +476,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -411,12 +485,16 @@
     <Step Id="phys_opt_design"/>
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
-    <Step Id="write_bitstream" PreStepTclHook="$PPRDIR/lab_src/script.tcl"/>
+    <Step Id="write_bitstream" PreStepTclHook="$PPRDIR/script.tcl"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_axi2wb_intcon_wrapper_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_wb_gpio_wrapper_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_bootrom_wrapper_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_swerv_wrapper_verilog_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_syscon_wrapper_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_axi2wb_intcon_wrapper_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_wb_gpio_wrapper_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_PWM_w_Int_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_wb_uart_wrapper_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_Sen_Seg_Display_0_1"/>
 </GenRun>

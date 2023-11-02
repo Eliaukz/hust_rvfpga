@@ -2,16 +2,16 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Oct  8 10:07:59 2023
-# Process ID: 2552
-# Current directory: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1
+# Start of session at: Mon Oct 23 18:51:48 2023
+# Process ID: 10812
+# Current directory: C:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1
 # Command line: vivado.exe -log swerv_soc_swerv_wrapper_verilog_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_swerv_wrapper_verilog_0_0.tcl
-# Log file: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.vds
-# Journal file: C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1\vivado.jou
+# Log file: C:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.vds
+# Journal file: C:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source swerv_soc_swerv_wrapper_verilog_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab1/ip_rope'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab3/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
 Command: synth_design -top swerv_soc_swerv_wrapper_verilog_0_0 -part xc7a100tcsg324-1 -mode out_of_context
 Starting synth_design
@@ -19,13 +19,13 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10896
+INFO: [Synth 8-7075] Helper process launched with PID 1220
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.602 ; gain = 0.000
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.434 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'swerv_soc_swerv_wrapper_verilog_0_0' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/synth/swerv_soc_swerv_wrapper_verilog_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_verilog' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_verilog.v:21]
-INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_dmi' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_dmi.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_swerv_wrapper_verilog_0_0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/synth/swerv_soc_swerv_wrapper_verilog_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_verilog' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_verilog.v:21]
+INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_dmi' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_dmi.sv:26]
 	Parameter TOTAL_INT bound to: 9 - type: integer 
 	Parameter DCCM_BITS bound to: 16 - type: integer 
 	Parameter DCCM_BANK_BITS bound to: 3 - type: integer 
@@ -53,7 +53,7 @@ INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_dmi' [c:/Users/R9000X/De
 	Parameter DMA_BUS_TAG bound to: 1 - type: integer 
 	Parameter SB_BUS_TAG bound to: 1 - type: integer 
 	Parameter IFU_BUS_TAG bound to: 3 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'swerv' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'swerv' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv.sv:23]
 	Parameter TOTAL_INT bound to: 9 - type: integer 
 	Parameter DCCM_BITS bound to: 16 - type: integer 
 	Parameter DCCM_BANK_BITS bound to: 3 - type: integer 
@@ -81,9 +81,9 @@ INFO: [Synth 8-6157] synthesizing module 'swerv' [c:/Users/R9000X/Desktop/jiekou
 	Parameter DMA_BUS_TAG bound to: 1 - type: integer 
 	Parameter SB_BUS_TAG bound to: 1 - type: integer 
 	Parameter IFU_BUS_TAG bound to: 3 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvoclkhdr' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:159]
-INFO: [Synth 8-6155] done synthesizing module 'rvoclkhdr' (1#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:159]
-INFO: [Synth 8-6157] synthesizing module 'dbg' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'rvoclkhdr' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:159]
+INFO: [Synth 8-6155] done synthesizing module 'rvoclkhdr' (1#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:159]
+INFO: [Synth 8-6157] synthesizing module 'dbg' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:24]
 	Parameter TOTAL_INT bound to: 9 - type: integer 
 	Parameter DCCM_BITS bound to: 16 - type: integer 
 	Parameter DCCM_BANK_BITS bound to: 3 - type: integer 
@@ -113,79 +113,79 @@ INFO: [Synth 8-6157] synthesizing module 'dbg' [c:/Users/R9000X/Desktop/jiekou_l
 	Parameter IFU_BUS_TAG bound to: 3 - type: integer 
 	Parameter ICCM_ENABLE bound to: 1'b0 
 	Parameter DCCM_ENABLE bound to: 1'b1 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff' (2#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff' (2#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized0' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized0' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized0' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized0' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized1' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized1' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized1' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized1' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 32 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized2' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized2' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized2' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized2' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized2' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized2' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe' (4#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized3' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized2' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized2' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe' (4#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized3' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized3' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized3' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized3' (4#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized3' (4#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffsc' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized3' (4#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized3' (4#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffsc' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:60]
 	Parameter WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdffsc' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:60]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized4' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffsc' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:60]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized4' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized4' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized4' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized4' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized4' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized4' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized4' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 16 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized5' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized5' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized5' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized5' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized5' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized5' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized0' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized5' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized5' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized0' (5#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
 	Parameter WIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga' (6#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6155] done synthesizing module 'dbg' (7#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:24]
-INFO: [Synth 8-6157] synthesizing module 'ifu' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga' (6#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'dbg' (7#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'ifu' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv:22]
 	Parameter TAGWIDTH bound to: 2 - type: integer 
 	Parameter IDWIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'ifu_ifc_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'ifu_ifc_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 31 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized6' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized6' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 31 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized6' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized6' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 31 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized6' (7#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized6' (7#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized1' (7#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_ifc_ctl' (8#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ifu_bp_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized6' (7#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized6' (7#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized1' (7#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_ifc_ctl' (8#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ifu_bp_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:27]
 	Parameter PC4 bound to: 4 - type: integer 
 	Parameter BOFF bound to: 3 - type: integer 
 	Parameter CALL bound to: 2 - type: integer 
@@ -196,46 +196,46 @@ INFO: [Synth 8-6157] synthesizing module 'ifu_bp_ctl' [c:/Users/R9000X/Desktop/j
 	Parameter NUM_BHT_LOOP_INNER_HI bound to: 7 - type: integer 
 	Parameter NUM_BHT_LOOP_OUTER_LO bound to: 4 - type: integer 
 	Parameter BHT_NO_ADDR_MATCH bound to: 1'b1 
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized2' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized2' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 26 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized7' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized7' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 26 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized7' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized7' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 26 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized7' (8#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized7' (8#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized2' (8#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized7' (8#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized7' (8#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized2' (8#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
 	Parameter WIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga' (9#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
-INFO: [Synth 8-6157] synthesizing module 'rvbtb_addr_hash' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:353]
-INFO: [Synth 8-6155] done synthesizing module 'rvbtb_addr_hash' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:353]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized8' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga' (9#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6157] synthesizing module 'rvbtb_addr_hash' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:353]
+INFO: [Synth 8-6155] done synthesizing module 'rvbtb_addr_hash' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:353]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized8' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 13 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized8' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-226] default block is never used [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:1075]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized3' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized8' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-226] default block is never used [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:1075]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized3' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 28 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized8' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized8' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 28 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized9' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized9' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 28 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized9' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized8' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized3' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvbradder' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:256]
-INFO: [Synth 8-6155] done synthesizing module 'rvbradder' (11#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:256]
-INFO: [Synth 8-6157] synthesizing module 'rvbtb_tag_hash' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:333]
-INFO: [Synth 8-6155] done synthesizing module 'rvbtb_tag_hash' (12#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:333]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized10' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized9' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized8' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized3' (10#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvbradder' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:256]
+INFO: [Synth 8-6155] done synthesizing module 'rvbradder' (11#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:256]
+INFO: [Synth 8-6157] synthesizing module 'rvbtb_tag_hash' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:333]
+INFO: [Synth 8-6155] done synthesizing module 'rvbtb_tag_hash' (12#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:333]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized10' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 9 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized10' (12#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvbtb_ghr_hash' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:368]
-INFO: [Synth 8-6155] done synthesizing module 'rvbtb_ghr_hash' (13#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:368]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_bp_ctl' (14#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:27]
-INFO: [Synth 8-6157] synthesizing module 'ifu_aln_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized10' (12#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvbtb_ghr_hash' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:368]
+INFO: [Synth 8-6155] done synthesizing module 'rvbtb_ghr_hash' (13#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:368]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_bp_ctl' (14#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:27]
+INFO: [Synth 8-6157] synthesizing module 'ifu_aln_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv:21]
 	Parameter TOTAL_INT bound to: 9 - type: integer 
 	Parameter DCCM_BITS bound to: 16 - type: integer 
 	Parameter DCCM_BANK_BITS bound to: 3 - type: integer 
@@ -267,53 +267,53 @@ INFO: [Synth 8-6157] synthesizing module 'ifu_aln_ctl' [c:/Users/R9000X/Desktop/
 	Parameter MSIZE bound to: 51 - type: integer 
 	Parameter BRDATA_SIZE bound to: 64 - type: integer 
 	Parameter BRDATA_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rveven_paritycheck' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:416]
+INFO: [Synth 8-6157] synthesizing module 'rveven_paritycheck' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:416]
 	Parameter WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rveven_paritycheck' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:416]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized4' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rveven_paritycheck' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:416]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized4' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 51 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized9' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized9' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 51 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized11' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized11' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 51 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized11' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized9' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized4' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized5' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized11' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized9' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized4' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized5' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 64 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized10' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized10' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 64 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized12' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized12' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 64 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized12' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized10' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized5' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized13' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized12' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized10' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized5' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized13' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized13' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized6' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized13' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized6' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 8 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized11' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized11' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized11' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized6' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized7' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized11' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized6' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized7' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 128 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized12' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized12' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 128 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized14' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized14' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 128 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized14' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized12' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized7' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'ifu_compress_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv:20]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_compress_ctl' (16#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv:20]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_aln_ctl' (17#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv:21]
-INFO: [Synth 8-6157] synthesizing module 'ifu_mem_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized14' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized12' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized7' (15#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'ifu_compress_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_compress_ctl' (16#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_aln_ctl' (17#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'ifu_mem_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:24]
 	Parameter TOTAL_INT bound to: 9 - type: integer 
 	Parameter DCCM_BITS bound to: 16 - type: integer 
 	Parameter DCCM_BANK_BITS bound to: 3 - type: integer 
@@ -342,59 +342,59 @@ INFO: [Synth 8-6157] synthesizing module 'ifu_mem_ctl' [c:/Users/R9000X/Desktop/
 	Parameter SB_BUS_TAG bound to: 1 - type: integer 
 	Parameter IFU_BUS_TAG bound to: 3 - type: integer 
 	Parameter NUM_OF_BEATS bound to: 8 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rveven_paritygen' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:407]
+INFO: [Synth 8-6157] synthesizing module 'rveven_paritygen' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:407]
 	Parameter WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rveven_paritygen' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:407]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'rveven_paritygen' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:407]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
 	Parameter WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga__parameterized0' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga__parameterized0' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
 	Parameter WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga__parameterized1' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga__parameterized1' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
 	Parameter WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized0' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized0' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized1' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
 	Parameter WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized1' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized2' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized1' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized2' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
 	Parameter WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized2' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized15' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized2' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized15' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized15' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized13' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized15' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized13' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized13' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized3' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized13' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized3' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
 	Parameter WIDTH bound to: 64 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized3' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized16' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized3' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized16' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized16' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized8' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized16' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized8' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 9 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized14' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized14' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 9 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized14' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized8' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized9' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized14' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized8' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized9' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 34 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized15' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized15' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized17' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized17' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized17' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized15' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized9' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_mem_ctl' (19#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:24]
-INFO: [Synth 8-6155] done synthesizing module 'ifu' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv:22]
-INFO: [Synth 8-6157] synthesizing module 'dec' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized17' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized15' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized9' (18#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_mem_ctl' (19#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'ifu' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'dec' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec.sv:30]
 	Parameter GPR_BANKS bound to: 1 - type: integer 
 	Parameter GPR_BANKS_LOG2 bound to: 1 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'dec_ib_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'dec_ib_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv:16]
 	Parameter TOTAL_INT bound to: 9 - type: integer 
 	Parameter DCCM_BITS bound to: 16 - type: integer 
 	Parameter DCCM_BANK_BITS bound to: 3 - type: integer 
@@ -422,97 +422,97 @@ INFO: [Synth 8-6157] synthesizing module 'dec_ib_ctl' [c:/Users/R9000X/Desktop/j
 	Parameter DMA_BUS_TAG bound to: 1 - type: integer 
 	Parameter SB_BUS_TAG bound to: 1 - type: integer 
 	Parameter IFU_BUS_TAG bound to: 3 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized10' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized10' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 37 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized16' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized16' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 37 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized18' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized18' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 37 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized18' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized16' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized10' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized11' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized18' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized16' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized10' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized11' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 68 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized17' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized17' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 68 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized19' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized19' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 68 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized19' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized17' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized11' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'dec_ib_ctl' (21#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv:16]
-INFO: [Synth 8-6157] synthesizing module 'dec_decode_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized19' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized17' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized11' (20#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'dec_ib_ctl' (21#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'dec_decode_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:17]
 	Parameter NBLOAD_SIZE bound to: 8 - type: integer 
 	Parameter NBLOAD_SIZE_MSB bound to: 7 - type: integer 
 	Parameter NBLOAD_TAG_MSB bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized20' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized20' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized20' (21#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'dec_dec_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:2497]
-INFO: [Synth 8-6155] done synthesizing module 'dec_dec_ctl' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:2497]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized12' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized20' (21#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'dec_dec_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:2497]
+INFO: [Synth 8-6155] done synthesizing module 'dec_dec_ctl' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:2497]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized12' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 67 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized18' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized18' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 67 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized21' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized21' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 67 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized21' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized18' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized12' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized13' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized21' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized18' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized12' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized13' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 12 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized19' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized19' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 	Parameter WIDTH bound to: 12 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized22' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized22' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 12 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized22' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized19' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized13' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'dec_decode_ctl' (23#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'dec_tlu_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:26]
-INFO: [Synth 8-6157] synthesizing module 'dec_timer_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:2644]
-INFO: [Synth 8-6155] done synthesizing module 'dec_timer_ctl' (24#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:2644]
-INFO: [Synth 8-6157] synthesizing module 'rvsyncss' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:211]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized22' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized19' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized13' (22#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'dec_decode_ctl' (23#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'dec_tlu_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'dec_timer_ctl' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:2644]
+INFO: [Synth 8-6155] done synthesizing module 'dec_timer_ctl' (24#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:2644]
+INFO: [Synth 8-6157] synthesizing module 'rvsyncss' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:211]
 	Parameter WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvsyncss' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:211]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized23' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvsyncss' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:211]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized23' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 22 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized23' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized24' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized23' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized24' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 39 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized24' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized25' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized24' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized25' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 18 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized25' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized26' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized25' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized26' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
 	Parameter WIDTH bound to: 15 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized26' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized14' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized26' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized14' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 14 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized20' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized20' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter WIDTH bound to: 14 - type: integer 
 	Parameter WIDTH bound to: 14 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized27' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized20' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized14' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized27' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized20' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized14' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 22 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 22 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized21' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized15' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized21' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized15' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 	Parameter WIDTH bound to: 17 - type: integer 
 	Parameter OVERRIDE bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 17 - type: integer 
 	Parameter WIDTH bound to: 17 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized28' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized22' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized16' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized28' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized22' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized16' (25#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter WIDTH bound to: 6 - type: integer 
 	Parameter GPR_BANKS bound to: 1 - type: integer 
@@ -963,21 +963,21 @@ INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instan
 	Parameter NUM_WAYS bound to: 4 - type: integer 
 	Parameter NUM_SUBBANKS bound to: 4 - type: integer 
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1017.602 ; gain = 0.000
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1019.434 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1017.602 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1019.434 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1017.602 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1019.434 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 1141.992 ; gain = 124.391
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1148.188 ; gain = 128.754
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'inst/swerv_eh1_2/swerv/dbg/axi_bready_ff' (rvdffs) to 'inst/swerv_eh1_2/swerv/dbg/axi_rready_ff'
 INFO: [Synth 8-223] decloning instance 'inst/swerv_eh1_2/swerv/exu/div_e1/dividend_c' (rvtwoscomp) to 'inst/swerv_eh1_2/swerv/exu/div_e1/q_ff_c'
@@ -1283,7 +1283,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pic_ctrl
 INFO: [Synth 8-3886] merging instance 'ifu/mem_ctl/ifu_pmu_sigs_ff/dout_reg[4]' (FDC) to 'ifu/mem_ctl/act_miss_ff/dout_reg[0]'
 INFO: [Synth 8-3886] merging instance 'ifu/mem_ctl/dma_ok_prev_ff/dout_reg[0]' (FDC) to 'ifu/mem_ctl/sbiccm_err_ff/dout_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ifu/mem_ctl/\sbiccm_err_ff/dout_reg[0] )
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:108]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:108]
 DSP Report: Generating DSP prod_e2, operation Mode is: A*B.
 DSP Report: operator prod_e2 is absorbed into DSP prod_e2.
 DSP Report: operator prod_e2 is absorbed into DSP prod_e2.
@@ -1297,7 +1297,7 @@ DSP Report: Generating DSP prod_e2, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator prod_e2 is absorbed into DSP prod_e2.
 DSP Report: operator prod_e2 is absorbed into DSP prod_e2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:02:35 . Memory (MB): peak = 1181.398 ; gain = 163.797
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:02:31 . Memory (MB): peak = 1190.180 ; gain = 170.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1358,7 +1358,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:45 ; elapsed = 00:03:13 . Memory (MB): peak = 1181.398 ; gain = 163.797
+Finished Timing Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:03:10 . Memory (MB): peak = 1190.180 ; gain = 170.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1498,16 +1498,16 @@ INFO: [Synth 8-3886] merging instance 'swervi_4/inst/swerv_eh1_2/swerv/ifu/aln/b
 INFO: [Synth 8-3886] merging instance 'inst/swerv_eh1_2/swerv/exu/i1_alu_e1/predictpacketff/genblock.dff/dffs/dout_reg[71]' (FDCE) to 'inst/swerv_eh1_2/swerv/exu/i1_alu_e1/pcff/genblock.dff/dffs/dout_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/swerv_eh1_2/swerv/exu/i0_alu_e1/predictpacketff/genblock.dff/dffs/dout_reg[71]' (FDCE) to 'inst/swerv_eh1_2/swerv/exu/i0_alu_e1/pcff/genblock.dff/dffs/dout_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/swerv_eh1_2/swerv/exu/div_e1/mff/genblock.dff/dffs/dout_reg[31]' (FDCE) to 'inst/swerv_eh1_2/swerv/exu/div_e1/miscf/dffs/dout_reg[2]'
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:51 ; elapsed = 00:03:24 . Memory (MB): peak = 1181.398 ; gain = 163.797
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:03:21 . Memory (MB): peak = 1190.180 ; gain = 170.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1562,37 +1562,37 @@ INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instan
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:57 ; elapsed = 00:03:32 . Memory (MB): peak = 1192.527 ; gain = 174.926
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:03:29 . Memory (MB): peak = 1201.598 ; gain = 182.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:57 ; elapsed = 00:03:32 . Memory (MB): peak = 1192.527 ; gain = 174.926
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:03:29 . Memory (MB): peak = 1201.598 ; gain = 182.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:02 ; elapsed = 00:03:38 . Memory (MB): peak = 1192.527 ; gain = 174.926
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:57 ; elapsed = 00:03:35 . Memory (MB): peak = 1201.598 ; gain = 182.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:02 ; elapsed = 00:03:39 . Memory (MB): peak = 1192.527 ; gain = 174.926
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:58 ; elapsed = 00:03:36 . Memory (MB): peak = 1201.598 ; gain = 182.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:04 ; elapsed = 00:03:41 . Memory (MB): peak = 1192.527 ; gain = 174.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:59 ; elapsed = 00:03:38 . Memory (MB): peak = 1201.598 ; gain = 182.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:04 ; elapsed = 00:03:41 . Memory (MB): peak = 1192.527 ; gain = 174.926
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:00 ; elapsed = 00:03:38 . Memory (MB): peak = 1201.598 ; gain = 182.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -5006,34 +5006,34 @@ Report Instance Areas:
 |3377  |          wake_up_ff                                                  |rvdff_33                         |     1|
 +------+----------------------------------------------------------------------+---------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:04 ; elapsed = 00:03:42 . Memory (MB): peak = 1192.527 ; gain = 174.926
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:00 ; elapsed = 00:03:39 . Memory (MB): peak = 1201.598 ; gain = 182.164
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 223 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:04 ; elapsed = 00:03:42 . Memory (MB): peak = 1192.527 ; gain = 174.926
-Synthesis Optimization Complete : Time (s): cpu = 00:02:04 ; elapsed = 00:03:42 . Memory (MB): peak = 1192.527 ; gain = 174.926
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:00 ; elapsed = 00:03:39 . Memory (MB): peak = 1201.598 ; gain = 182.164
+Synthesis Optimization Complete : Time (s): cpu = 00:02:00 ; elapsed = 00:03:39 . Memory (MB): peak = 1201.598 ; gain = 182.164
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1213.359 ; gain = 2.168
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1216.270 ; gain = 2.422
 INFO: [Netlist 29-17] Analyzing 1052 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1373.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1376.242 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 378 Infos, 123 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:19 ; elapsed = 00:04:03 . Memory (MB): peak = 1373.531 ; gain = 355.930
+synth_design: Time (s): cpu = 00:02:14 ; elapsed = 00:03:59 . Memory (MB): peak = 1376.242 ; gain = 356.809
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1734.629 ; gain = 361.098
-write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1734.629 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1745.664 ; gain = 369.422
+write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1745.664 ; gain = 0.000
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP swerv_soc_swerv_wrapper_verilog_0_0, cache-ID = 37a99d847c9465c6
 INFO: [Coretcl 2-1174] Renamed 3376 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1747.691 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1758.719 ; gain = 0.031
 INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_swerv_wrapper_verilog_0_0_utilization_synth.rpt -pb swerv_soc_swerv_wrapper_verilog_0_0_utilization_synth.pb
-write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1747.691 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Oct  8 10:13:01 2023...
+write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1758.719 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 23 18:56:46 2023...

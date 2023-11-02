@@ -60,6 +60,8 @@ module swerv_soc_syscon_wrapper_0_0 (
   gpio_irq,
   ptc_irq,
   o_timer_irq,
+  o_sw_irq3,
+  o_sw_irq4,
   i_ram_init_done,
   i_ram_init_error,
   o_nmi_vec,
@@ -91,6 +93,8 @@ input wire ptc_irq;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME o_timer_irq, SENSITIVITY LEVEL_HIGH, PortWidth 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 o_timer_irq INTERRUPT" *)
 output wire o_timer_irq;
+output wire o_sw_irq3;
+output wire o_sw_irq4;
 input wire i_ram_init_done;
 input wire i_ram_init_error;
 output wire [31 : 0] o_nmi_vec;
@@ -112,6 +116,8 @@ output wire [6 : 0] Digits_Bits;
     .gpio_irq(gpio_irq),
     .ptc_irq(ptc_irq),
     .o_timer_irq(o_timer_irq),
+    .o_sw_irq3(o_sw_irq3),
+    .o_sw_irq4(o_sw_irq4),
     .i_ram_init_done(i_ram_init_done),
     .i_ram_init_error(i_ram_init_error),
     .o_nmi_vec(o_nmi_vec),

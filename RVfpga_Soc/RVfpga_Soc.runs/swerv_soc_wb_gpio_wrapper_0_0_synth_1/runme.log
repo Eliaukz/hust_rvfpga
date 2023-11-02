@@ -11,7 +11,7 @@
 
 source swerv_soc_wb_gpio_wrapper_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab1/ip_rope'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab3/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
 Command: synth_design -top swerv_soc_wb_gpio_wrapper_0_0 -part xc7a100tcsg324-1 -mode out_of_context
 Starting synth_design
@@ -19,38 +19,38 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7408
+INFO: [Synth 8-7075] Helper process launched with PID 15764
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/synth/swerv_soc_wb_gpio_wrapper_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'wb_gpio_wrapper' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:23]
-INFO: [Synth 8-6157] synthesizing module 'gpio_top' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/gpio_top.v:115]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/synth/swerv_soc_wb_gpio_wrapper_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'wb_gpio_wrapper' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/gpio_top.v:115]
 	Parameter dw bound to: 32 - type: integer 
 	Parameter aw bound to: 8 - type: integer 
 	Parameter gw bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (1#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/gpio_top.v:115]
-WARNING: [Synth 8-7071] port 'aux_i' of module 'gpio_top' is unconnected for instance 'gpio' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
-WARNING: [Synth 8-7071] port 'clk_pad_i' of module 'gpio_top' is unconnected for instance 'gpio' [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
-WARNING: [Synth 8-7023] instance 'gpio' of module 'gpio_top' has 17 connections declared, but only 15 given [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
-INFO: [Synth 8-6155] done synthesizing module 'wb_gpio_wrapper' (2#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/synth/swerv_soc_wb_gpio_wrapper_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (1#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/gpio_top.v:115]
+WARNING: [Synth 8-7071] port 'aux_i' of module 'gpio_top' is unconnected for instance 'gpio' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
+WARNING: [Synth 8-7071] port 'clk_pad_i' of module 'gpio_top' is unconnected for instance 'gpio' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
+WARNING: [Synth 8-7023] instance 'gpio' of module 'gpio_top' has 17 connections declared, but only 15 given [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'wb_gpio_wrapper' (2#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/synth/swerv_soc_wb_gpio_wrapper_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -84,20 +84,20 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -116,37 +116,37 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -180,28 +180,28 @@ Report Instance Areas:
 |3     |    gpio |gpio_top        |   741|
 +------+---------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1018.875 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.438 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1014.438 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1014.438 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1018.875 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1014.438 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 19 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1018.875 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1014.438 ; gain = 0.000
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/swerv_soc_wb_gpio_wrapper_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1436.059 ; gain = 417.184
+INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/swerv_soc_wb_gpio_wrapper_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1432.359 ; gain = 417.922
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/swerv_soc_wb_gpio_wrapper_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/swerv_soc_wb_gpio_wrapper_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_wb_gpio_wrapper_0_0_utilization_synth.rpt -pb swerv_soc_wb_gpio_wrapper_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Oct  8 10:08:43 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 23 18:49:47 2023...

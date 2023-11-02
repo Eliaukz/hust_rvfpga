@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Sun Oct  8 10:10:06 2023
+-- Date        : Mon Oct 23 18:53:46 2023
 -- Host        : LAPTOP-SSK6ALTK running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top swerv_soc_axi2wb_intcon_wrapper_0_0 -prefix
+--               swerv_soc_axi2wb_intcon_wrapper_0_0_ swerv_soc_axi2wb_intcon_wrapper_0_0_sim_netlist.vhdl
 -- Design      : swerv_soc_axi2wb_intcon_wrapper_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -85,8 +85,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_axi2wb is
     \o_wb_dat_reg[31]_0\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \o_wb_sel_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_axi2wb : entity is "axi2wb";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_axi2wb;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_axi2wb is
@@ -3235,8 +3233,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_delta_counter is
     clk_i_wrapper : in STD_LOGIC;
     \counter_q_reg[4]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_delta_counter : entity is "delta_counter";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_delta_counter;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_delta_counter is
@@ -17168,8 +17164,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_fifo_v3 is
     \mem_q_reg[0][1]_0\ : in STD_LOGIC;
     \mem_q_reg[0][0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_fifo_v3 : entity is "fifo_v3";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_fifo_v3;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_fifo_v3 is
@@ -27640,8 +27634,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_rr_arb_tree is
     o_user_bready_0 : in STD_LOGIC;
     o_user_bready_1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_rr_arb_tree : entity is "rr_arb_tree";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_rr_arb_tree;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_rr_arb_tree is
@@ -36412,8 +36404,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_spill_register is
     i_sb_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gen_spill_reg.a_data_q_reg[aw_select][1]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_spill_register : entity is "spill_register";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_spill_register;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_spill_register is
@@ -70115,8 +70105,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_wb_mux is
     wbm_err_reg_0 : in STD_LOGIC;
     clk_i_wrapper : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_wb_mux : entity is "wb_mux";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_wb_mux;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_wb_mux is
@@ -70172,8 +70160,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_axi_demux_id_counters is
     \counter_q_reg[0]_12\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \counter_q_reg[0]_13\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_demux_id_counters : entity is "axi_demux_id_counters";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_axi_demux_id_counters;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_demux_id_counters is
@@ -73105,8 +73091,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_axi_mux is
     \gen_spill_reg.a_data_q_reg[addr][15]\ : in STD_LOGIC_VECTOR ( 12 downto 0 );
     \gen_spill_reg.a_data_q_reg[id][3]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_mux : entity is "axi_mux";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_axi_mux;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_mux is
@@ -74275,8 +74259,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_counter is
     clk_i_wrapper : in STD_LOGIC;
     \counter_q_reg[7]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_counter : entity is "counter";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_counter;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_counter is
@@ -74399,8 +74381,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_wb_intercon is
     wbm_err_reg : in STD_LOGIC;
     clk_i_wrapper : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_wb_intercon : entity is "wb_intercon";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_wb_intercon;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_wb_intercon is
@@ -74517,8 +74497,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_axi_demux is
     i_ifu_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gen_spill_reg.a_data_q_reg[ar_select][1]\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_demux : entity is "axi_demux";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_axi_demux;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_demux is
@@ -77331,8 +77309,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_axi_err_slv is
     \slv_reqs[0][3][ar][id]\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     D : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_err_slv : entity is "axi_err_slv";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_axi_err_slv;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_err_slv is
@@ -77977,8 +77953,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_axi_xbar is
     i_user_awready : in STD_LOGIC;
     i_user_arready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_xbar : entity is "axi_xbar";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_axi_xbar;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_xbar is
@@ -80210,8 +80184,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_axi_intercon is
     i_user_awready : in STD_LOGIC;
     i_user_arready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_intercon : entity is "axi_intercon";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_axi_intercon;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_intercon is
@@ -80673,8 +80645,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_axi_intercon_wr is
     i_user_awready : in STD_LOGIC;
     i_user_arready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_intercon_wr : entity is "axi_intercon_wr";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_axi_intercon_wr;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_axi_intercon_wr is
@@ -81132,8 +81102,6 @@ entity swerv_soc_axi2wb_intcon_wrapper_0_0_axi2wb_intcon_wrapper is
     wb_spi_flash_dat_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wb_rom_ack_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_axi2wb_intcon_wrapper_0_0_axi2wb_intcon_wrapper : entity is "axi2wb_intcon_wrapper";
 end swerv_soc_axi2wb_intcon_wrapper_0_0_axi2wb_intcon_wrapper;
 
 architecture STRUCTURE of swerv_soc_axi2wb_intcon_wrapper_0_0_axi2wb_intcon_wrapper is

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/R9000X/Desktop/jiekou_lab/lab1/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_syscon_wrapper_0_0_synth_1'
+HD_PWD='C:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_syscon_wrapper_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

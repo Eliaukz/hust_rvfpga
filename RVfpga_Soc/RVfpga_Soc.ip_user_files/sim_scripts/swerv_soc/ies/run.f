@@ -80,8 +80,33 @@
   "../../../bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_verilog.v" \
   "../../../bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/sim/swerv_soc_swerv_wrapper_verilog_0_0.v" \
   "../../../bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/sim/swerv_soc_bootrom_wrapper_0_0.v" \
-  "../../../bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/sim/swerv_soc_syscon_wrapper_0_0.v" \
-  "../../../bd/swerv_soc/sim/swerv_soc.v" \
+-endlib
+-makelib ies_lib/generic_baseblocks_v2_1_0 \
+  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axi_infrastructure_v1_1_0 \
+  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axi_register_slice_v2_1_22 \
+  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/fifo_generator_v13_2_5 \
+  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/276e/simulation/fifo_generator_vlog_beh.v" \
+-endlib
+-makelib ies_lib/fifo_generator_v13_2_5 \
+  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/276e/hdl/fifo_generator_v13_2_rfs.vhd" \
+-endlib
+-makelib ies_lib/fifo_generator_v13_2_5 \
+  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/276e/hdl/fifo_generator_v13_2_rfs.v" \
+-endlib
+-makelib ies_lib/axi_data_fifo_v2_1_21 \
+  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axi_crossbar_v2_1_23 \
+  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/swerv_soc/ip/swerv_soc_xbar_0/sim/swerv_soc_xbar_0.v" \
 -endlib
 -makelib ies_lib/axi_lite_ipif_v3_0_4 \
   "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
@@ -98,38 +123,45 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/sim/swerv_soc_axi_gpio_0_0.vhd" \
 -endlib
--makelib ies_lib/generic_baseblocks_v2_1_0 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/swerv_soc/ip/swerv_soc_wb_uart_wrapper_0_0/sim/swerv_soc_wb_uart_wrapper_0_0.v" \
+  "../../../bd/swerv_soc/ipshared/fad8/hdl/PWM_Controller_Int.v" \
+  "../../../bd/swerv_soc/ipshared/fad8/hdl/PWM_w_Int_v1_0_S00_AXI.v" \
+  "../../../bd/swerv_soc/ipshared/fad8/hdl/PWM_w_Int_v1_0.v" \
+  "../../../bd/swerv_soc/ip/swerv_soc_PWM_w_Int_0_0/sim/swerv_soc_PWM_w_Int_0_0.v" \
 -endlib
--makelib ies_lib/fifo_generator_v13_2_5 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/276e/simulation/fifo_generator_vlog_beh.v" \
+-makelib ies_lib/xlconcat_v2_1_4 \
+  "../../../../RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" \
 -endlib
--makelib ies_lib/fifo_generator_v13_2_5 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/276e/hdl/fifo_generator_v13_2_rfs.vhd" \
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/swerv_soc/ip/swerv_soc_xlconcat_0_0/sim/swerv_soc_xlconcat_0_0.v" \
+  "../../../bd/swerv_soc/ip/swerv_soc_ptc_wrapper_0_0/sim/swerv_soc_ptc_wrapper_0_0.v" \
+  "../../../bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/sim/swerv_soc_syscon_wrapper_0_0.v" \
+  "../../../bd/swerv_soc/ip/swerv_soc_wb_spi_wrapper_0_0/sim/swerv_soc_wb_spi_wrapper_0_0.v" \
 -endlib
--makelib ies_lib/fifo_generator_v13_2_5 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/276e/hdl/fifo_generator_v13_2_rfs.v" \
+-makelib ies_lib/lib_pkg_v1_0_2 \
+  "../../../../RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
 -endlib
--makelib ies_lib/axi_data_fifo_v2_1_21 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/54c0/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
+-makelib ies_lib/axi_iic_v2_0_25 \
+  "../../../../RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ipshared/1529/hdl/axi_iic_v2_0_vh_rfs.vhd" \
 -endlib
--makelib ies_lib/axi_infrastructure_v1_1_0 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/swerv_soc/ip/swerv_soc_axi_iic_0_0/sim/swerv_soc_axi_iic_0_0.vhd" \
 -endlib
--makelib ies_lib/axi_register_slice_v2_1_22 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/swerv_soc/sim/swerv_soc.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_22 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+  "../../../../RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/axi_clock_converter_v2_1_21 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+  "../../../../RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/blk_mem_gen_v8_4_4 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
+  "../../../../RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
 -endlib
 -makelib ies_lib/axi_dwidth_converter_v2_1_22 \
-  "../../../../RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+  "../../../../RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/swerv_soc/ip/swerv_soc_auto_ds_0/sim/swerv_soc_auto_ds_0.v" \
