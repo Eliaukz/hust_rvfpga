@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# bootrom_wrapper, syscon_wrapper
+# bootrom_wrapper, syscon_wrapper, wb_uart_wrapper
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -174,7 +174,8 @@ proc create_root_design { parentCell } {
   # Create ports
   set AN_0 [ create_bd_port -dir O -from 7 -to 0 AN_0 ]
   set Digits_Bits_0 [ create_bd_port -dir O -from 6 -to 0 Digits_Bits_0 ]
-  set bidir_0 [ create_bd_port -dir O -from 31 -to 0 bidir_0 ]
+  set PWMs [ create_bd_port -dir O -from 1 -to 0 PWMs ]
+  set bidir [ create_bd_port -dir O -from 31 -to 0 bidir ]
   set clk_0 [ create_bd_port -dir I -type clk clk_0 ]
   set dmi_hard_reset_0 [ create_bd_port -dir I -type rst dmi_hard_reset_0 ]
   set dmi_reg_addr_0 [ create_bd_port -dir I -from 6 -to 0 dmi_reg_addr_0 ]
@@ -186,8 +187,16 @@ proc create_root_design { parentCell } {
   set i_ram_init_done_0 [ create_bd_port -dir I i_ram_init_done_0 ]
   set i_ram_init_error_0 [ create_bd_port -dir I i_ram_init_error_0 ]
   set i_sw [ create_bd_port -dir I -from 15 -to 0 i_sw ]
+  set i_uart_rx [ create_bd_port -dir I i_uart_rx ]
   set o_led [ create_bd_port -dir O -from 15 -to 0 o_led ]
+  set o_uart_tx [ create_bd_port -dir O o_uart_tx ]
   set rst_0 [ create_bd_port -dir I -type rst rst_0 ]
+
+  # Create instance: PWM_w_Int_0, and set properties
+  set PWM_w_Int_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:PWM_w_Int:1.0 PWM_w_Int_0 ]
+
+  # Create instance: Sen_Seg_Display_0, and set properties
+  set Sen_Seg_Display_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Sen_Seg_Display:3.0 Sen_Seg_Display_0 ]
 
   # Create instance: axi2wb_intcon_wrapper_0, and set properties
   set axi2wb_intcon_wrapper_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:axi2wb_intcon_wrapper:1.0 axi2wb_intcon_wrapper_0 ]
@@ -195,8 +204,8 @@ proc create_root_design { parentCell } {
   # Create instance: axi_gpio_0, and set properties
   set axi_gpio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 ]
   set_property -dict [ list \
-   CONFIG.C_ALL_INPUTS_2 {1} \
-   CONFIG.C_ALL_OUTPUTS {1} \
+   CONFIG.C_ALL_INPUTS {1} \
+   CONFIG.C_ALL_OUTPUTS_2 {1} \
    CONFIG.C_GPIO2_WIDTH {16} \
    CONFIG.C_GPIO_WIDTH {16} \
    CONFIG.C_IS_DUAL {1} \
@@ -205,7 +214,7 @@ proc create_root_design { parentCell } {
   # Create instance: axi_interconnect_0, and set properties
   set axi_interconnect_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0 ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {1} \
+   CONFIG.NUM_MI {3} \
  ] $axi_interconnect_0
 
   # Create instance: bootrom_wrapper_0, and set properties
@@ -236,15 +245,31 @@ proc create_root_design { parentCell } {
   # Create instance: wb_gpio_wrapper_0, and set properties
   set wb_gpio_wrapper_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:wb_gpio_wrapper:1.0 wb_gpio_wrapper_0 ]
 
+  # Create instance: wb_uart_wrapper_0, and set properties
+  set block_name wb_uart_wrapper
+  set block_cell_name wb_uart_wrapper_0
+  if { [catch {set wb_uart_wrapper_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $wb_uart_wrapper_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create interface connections
   connect_bd_intf_net -intf_net S00_AXI_1 [get_bd_intf_pins axi2wb_intcon_wrapper_0/o_user_axi4] [get_bd_intf_pins axi_interconnect_0/S00_AXI]
   connect_bd_intf_net -intf_net axi2wb_intcon_wrapper_0_o_ram_axi4 [get_bd_intf_ports ram] [get_bd_intf_pins axi2wb_intcon_wrapper_0/o_ram_axi4]
   connect_bd_intf_net -intf_net axi_interconnect_0_M00_AXI [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins axi_interconnect_0/M00_AXI]
+  connect_bd_intf_net -intf_net axi_interconnect_0_M01_AXI [get_bd_intf_pins PWM_w_Int_0/S00_AXI] [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+  connect_bd_intf_net -intf_net axi_interconnect_0_M02_AXI [get_bd_intf_pins Sen_Seg_Display_0/S00_AXI] [get_bd_intf_pins axi_interconnect_0/M02_AXI]
   connect_bd_intf_net -intf_net swerv_wrapper_verilog_0_ifu_axi [get_bd_intf_pins axi2wb_intcon_wrapper_0/i_ifu_axi4] [get_bd_intf_pins swerv_wrapper_verilog_0/ifu_axi]
   connect_bd_intf_net -intf_net swerv_wrapper_verilog_0_lsu_axi [get_bd_intf_pins axi2wb_intcon_wrapper_0/i_lsu_axi4] [get_bd_intf_pins swerv_wrapper_verilog_0/lsu_axi]
   connect_bd_intf_net -intf_net swerv_wrapper_verilog_0_sb_axi [get_bd_intf_pins axi2wb_intcon_wrapper_0/i_sb_axi4] [get_bd_intf_pins swerv_wrapper_verilog_0/sb_axi]
 
   # Create port connections
+  connect_bd_net -net PWM_w_Int_0_LEDs [get_bd_ports PWMs] [get_bd_pins PWM_w_Int_0/LEDs]
+  connect_bd_net -net Sen_Seg_Display_0_AN [get_bd_ports AN_0] [get_bd_pins Sen_Seg_Display_0/AN]
+  connect_bd_net -net Sen_Seg_Display_0_Digits_Bits [get_bd_ports Digits_Bits_0] [get_bd_pins Sen_Seg_Display_0/Digits_Bits]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_gpio_adr_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_adr_o] [get_bd_pins wb_gpio_wrapper_0/wb_adr_i]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_gpio_cyc_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_cyc_o] [get_bd_pins wb_gpio_wrapper_0/wb_cyc_i]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_gpio_dat_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_dat_o] [get_bd_pins wb_gpio_wrapper_0/wb_dat_i]
@@ -255,43 +280,53 @@ proc create_root_design { parentCell } {
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_rom_cyc_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_cyc_o] [get_bd_pins bootrom_wrapper_0/i_wb_cyc]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_rom_dat_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_dat_o] [get_bd_pins bootrom_wrapper_0/i_wb_dat]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_rom_sel_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_sel_o] [get_bd_pins bootrom_wrapper_0/i_wb_sel]
+  connect_bd_net -net axi2wb_intcon_wrapper_0_wb_rom_stb_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_stb_o] [get_bd_pins bootrom_wrapper_0/i_wb_stb]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_rom_we_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_we_o] [get_bd_pins bootrom_wrapper_0/i_wb_we]
-  connect_bd_net -net axi2wb_intcon_wrapper_0_wb_spi_flash_adr_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_flash_adr_o] [get_bd_pins bootrom_wrapper_0/i_wb_stb]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_sys_adr_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_adr_o] [get_bd_pins syscon_wrapper_0/i_wb_adr]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_sys_cyc_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_cyc_o] [get_bd_pins syscon_wrapper_0/i_wb_cyc]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_sys_dat_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_dat_o] [get_bd_pins syscon_wrapper_0/i_wb_dat]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_sys_sel_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_sel_o] [get_bd_pins syscon_wrapper_0/i_wb_sel]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_sys_stb_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_stb_o] [get_bd_pins syscon_wrapper_0/i_wb_stb]
   connect_bd_net -net axi2wb_intcon_wrapper_0_wb_sys_we_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_we_o] [get_bd_pins syscon_wrapper_0/i_wb_we]
-  connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_ports o_led] [get_bd_pins axi_gpio_0/gpio_io_o]
+  connect_bd_net -net axi2wb_intcon_wrapper_0_wb_uart_adr_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_uart_adr_o] [get_bd_pins wb_uart_wrapper_0/wb_adr_i]
+  connect_bd_net -net axi2wb_intcon_wrapper_0_wb_uart_cyc_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_uart_cyc_o] [get_bd_pins wb_uart_wrapper_0/wb_cyc_i]
+  connect_bd_net -net axi2wb_intcon_wrapper_0_wb_uart_dat_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_uart_dat_o] [get_bd_pins wb_uart_wrapper_0/wb_dat_i]
+  connect_bd_net -net axi2wb_intcon_wrapper_0_wb_uart_sel_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_uart_sel_o] [get_bd_pins wb_uart_wrapper_0/wb_sel_i]
+  connect_bd_net -net axi2wb_intcon_wrapper_0_wb_uart_stb_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_uart_stb_o] [get_bd_pins wb_uart_wrapper_0/wb_stb_i]
+  connect_bd_net -net axi2wb_intcon_wrapper_0_wb_uart_we_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_uart_we_o] [get_bd_pins wb_uart_wrapper_0/wb_we_i]
+  connect_bd_net -net axi_gpio_0_gpio2_io_o [get_bd_ports o_led] [get_bd_pins axi_gpio_0/gpio2_io_o]
   connect_bd_net -net bootrom_wrapper_0_o_wb_ack [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_ack_i] [get_bd_pins bootrom_wrapper_0/o_wb_ack]
   connect_bd_net -net bootrom_wrapper_0_o_wb_rdt [get_bd_pins axi2wb_intcon_wrapper_0/wb_rom_dat_i] [get_bd_pins bootrom_wrapper_0/o_wb_rdt]
-  connect_bd_net -net clk_0_1 [get_bd_ports clk_0] [get_bd_pins axi2wb_intcon_wrapper_0/clk_i_wrapper] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins bootrom_wrapper_0/i_clk] [get_bd_pins swerv_wrapper_verilog_0/clk] [get_bd_pins syscon_wrapper_0/i_clk] [get_bd_pins wb_gpio_wrapper_0/wb_clk_i]
+  connect_bd_net -net clk_0_1 [get_bd_ports clk_0] [get_bd_pins PWM_w_Int_0/s00_axi_aclk] [get_bd_pins Sen_Seg_Display_0/s00_axi_aclk] [get_bd_pins axi2wb_intcon_wrapper_0/clk_i_wrapper] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins bootrom_wrapper_0/i_clk] [get_bd_pins swerv_wrapper_verilog_0/clk] [get_bd_pins syscon_wrapper_0/i_clk] [get_bd_pins wb_gpio_wrapper_0/wb_clk_i] [get_bd_pins wb_uart_wrapper_0/wb_clk_i]
   connect_bd_net -net dmi_hard_reset_0_1 [get_bd_ports dmi_hard_reset_0] [get_bd_pins swerv_wrapper_verilog_0/dmi_hard_reset]
   connect_bd_net -net dmi_reg_addr_0_1 [get_bd_ports dmi_reg_addr_0] [get_bd_pins swerv_wrapper_verilog_0/dmi_reg_addr]
   connect_bd_net -net dmi_reg_en_0_1 [get_bd_ports dmi_reg_en_0] [get_bd_pins swerv_wrapper_verilog_0/dmi_reg_en]
   connect_bd_net -net dmi_reg_wdata_0_1 [get_bd_ports dmi_reg_wdata_0] [get_bd_pins swerv_wrapper_verilog_0/dmi_reg_wdata]
   connect_bd_net -net dmi_reg_wr_en_0_1 [get_bd_ports dmi_reg_wr_en_0] [get_bd_pins swerv_wrapper_verilog_0/dmi_reg_wr_en]
   connect_bd_net -net extintsrc_req_0_1 [get_bd_ports extintsrc_req_0] [get_bd_pins swerv_wrapper_verilog_0/extintsrc_req]
-  connect_bd_net -net gpio2_io_i_0_1 [get_bd_ports i_sw] [get_bd_pins axi_gpio_0/gpio2_io_i]
+  connect_bd_net -net gpio_io_i_0_1 [get_bd_ports i_sw] [get_bd_pins axi_gpio_0/gpio_io_i]
   connect_bd_net -net i_ram_init_done_0_1 [get_bd_ports i_ram_init_done_0] [get_bd_pins syscon_wrapper_0/i_ram_init_done]
   connect_bd_net -net i_ram_init_error_0_1 [get_bd_ports i_ram_init_error_0] [get_bd_pins syscon_wrapper_0/i_ram_init_error]
-  connect_bd_net -net rst_0_1 [get_bd_ports rst_0] [get_bd_pins axi2wb_intcon_wrapper_0/rst_ni_wrapper] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins bootrom_wrapper_0/i_rst] [get_bd_pins swerv_wrapper_verilog_0/rst] [get_bd_pins syscon_wrapper_0/i_rst] [get_bd_pins wb_gpio_wrapper_0/wb_rst_i]
+  connect_bd_net -net i_uart_rx_0_1 [get_bd_ports i_uart_rx] [get_bd_pins wb_uart_wrapper_0/i_uart_rx]
+  connect_bd_net -net rst_0_1 [get_bd_ports rst_0] [get_bd_pins PWM_w_Int_0/s00_axi_aresetn] [get_bd_pins Sen_Seg_Display_0/s00_axi_aresetn] [get_bd_pins axi2wb_intcon_wrapper_0/rst_ni_wrapper] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins bootrom_wrapper_0/i_rst] [get_bd_pins swerv_wrapper_verilog_0/rst] [get_bd_pins syscon_wrapper_0/i_rst] [get_bd_pins wb_gpio_wrapper_0/wb_rst_i] [get_bd_pins wb_uart_wrapper_0/wb_rst_i]
   connect_bd_net -net swerv_wrapper_verilog_0_dmi_reg_rdata [get_bd_ports dmi_reg_rdata_0] [get_bd_pins swerv_wrapper_verilog_0/dmi_reg_rdata]
-  connect_bd_net -net syscon_wrapper_0_AN [get_bd_ports AN_0] [get_bd_pins syscon_wrapper_0/AN]
-  connect_bd_net -net syscon_wrapper_0_Digits_Bits [get_bd_ports Digits_Bits_0] [get_bd_pins syscon_wrapper_0/Digits_Bits]
   connect_bd_net -net syscon_wrapper_0_o_nmi_int [get_bd_pins swerv_wrapper_verilog_0/nmi_int] [get_bd_pins syscon_wrapper_0/o_nmi_int]
   connect_bd_net -net syscon_wrapper_0_o_nmi_vec [get_bd_pins swerv_wrapper_verilog_0/nmi_vec] [get_bd_pins syscon_wrapper_0/o_nmi_vec]
   connect_bd_net -net syscon_wrapper_0_o_timer_irq [get_bd_pins swerv_wrapper_verilog_0/timer_int] [get_bd_pins syscon_wrapper_0/o_timer_irq]
   connect_bd_net -net syscon_wrapper_0_o_wb_ack [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_ack_i] [get_bd_pins syscon_wrapper_0/o_wb_ack]
   connect_bd_net -net syscon_wrapper_0_o_wb_rdt [get_bd_pins axi2wb_intcon_wrapper_0/wb_sys_dat_i] [get_bd_pins syscon_wrapper_0/o_wb_rdt]
-  connect_bd_net -net wb_gpio_wrapper_0_bidir [get_bd_ports bidir_0] [get_bd_pins wb_gpio_wrapper_0/bidir]
+  connect_bd_net -net wb_gpio_wrapper_0_bidir [get_bd_ports bidir] [get_bd_pins wb_gpio_wrapper_0/bidir]
   connect_bd_net -net wb_gpio_wrapper_0_wb_ack_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_ack_i] [get_bd_pins wb_gpio_wrapper_0/wb_ack_o]
   connect_bd_net -net wb_gpio_wrapper_0_wb_dat_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_dat_i] [get_bd_pins wb_gpio_wrapper_0/wb_dat_o]
   connect_bd_net -net wb_gpio_wrapper_0_wb_err_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_gpio_err_i] [get_bd_pins wb_gpio_wrapper_0/wb_err_o]
   connect_bd_net -net wb_gpio_wrapper_0_wb_inta_o [get_bd_pins syscon_wrapper_0/gpio_irq] [get_bd_pins wb_gpio_wrapper_0/wb_inta_o]
+  connect_bd_net -net wb_uart_wrapper_0_o_uart_tx [get_bd_ports o_uart_tx] [get_bd_pins wb_uart_wrapper_0/o_uart_tx]
+  connect_bd_net -net wb_uart_wrapper_0_wb_ack_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_uart_ack_i] [get_bd_pins wb_uart_wrapper_0/wb_ack_o]
+  connect_bd_net -net wb_uart_wrapper_0_wb_dat_o [get_bd_pins axi2wb_intcon_wrapper_0/wb_uart_dat_i] [get_bd_pins wb_uart_wrapper_0/wb_dat_o]
 
   # Create address segments
+  assign_bd_address -offset 0x80120000 -range 0x00010000 -target_address_space [get_bd_addr_spaces axi2wb_intcon_wrapper_0/o_user_axi4] [get_bd_addr_segs PWM_w_Int_0/S00_AXI/S00_AXI_reg] -force
+  assign_bd_address -offset 0x80130000 -range 0x00010000 -target_address_space [get_bd_addr_spaces axi2wb_intcon_wrapper_0/o_user_axi4] [get_bd_addr_segs Sen_Seg_Display_0/S00_AXI/S00_AXI_reg] -force
   assign_bd_address -offset 0x80100000 -range 0x00010000 -target_address_space [get_bd_addr_spaces axi2wb_intcon_wrapper_0/o_user_axi4] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] -force
   assign_bd_address -offset 0x00000000 -range 0x08000000 -target_address_space [get_bd_addr_spaces axi2wb_intcon_wrapper_0/o_ram_axi4] [get_bd_addr_segs ram/Reg] -force
   assign_bd_address -offset 0x00000000 -range 0x000100000000 -target_address_space [get_bd_addr_spaces swerv_wrapper_verilog_0/ifu_axi] [get_bd_addr_segs axi2wb_intcon_wrapper_0/i_ifu_axi4/reg0] -force

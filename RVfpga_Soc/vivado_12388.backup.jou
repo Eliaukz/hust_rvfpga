@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 31 18:31:23 2023
+# Process ID: 12388
+# Current directory: C:/Users/R9000X/Desktop/jiekou_lab/lab4/RVfpga_Soc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12672 C:\Users\R9000X\Desktop\jiekou_lab\lab4\RVfpga_Soc\RVfpga_Soc.xpr
+# Log file: C:/Users/R9000X/Desktop/jiekou_lab/lab4/RVfpga_Soc/vivado.log
+# Journal file: C:/Users/R9000X/Desktop/jiekou_lab/lab4/RVfpga_Soc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/R9000X/Desktop/jiekou_lab/lab4/RVfpga_Soc/RVfpga_Soc.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+set_property location {2005 229} [get_bd_ports AN_0]
+set_property location {2018 278} [get_bd_ports Digits_Bits_0]
+set_property location {2008 257} [get_bd_ports AN_0]
+set_property location {2012 287} [get_bd_ports Digits_Bits_0]
+set_property location {2007 278} [get_bd_ports Digits_Bits_0]
+set_property location {2027 534} [get_bd_ports o_uart_tx]
+set_property location {2010 545} [get_bd_ports o_uart_tx]
+set_property location {3.5 1226 756} [get_bd_cells wb_gpio_wrapper_0]
+set_property location {4 1155 515} [get_bd_cells wb_uart_wrapper_0]

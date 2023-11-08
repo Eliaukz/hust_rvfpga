@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Sun Oct  8 11:02:05 2023
+//Date        : Mon Oct 30 21:49:03 2023
 //Host        : LAPTOP-SSK6ALTK running 64-bit major release  (build 9200)
 //Command     : generate_target swerv_soc_wrapper.bd
 //Design      : swerv_soc_wrapper
@@ -12,7 +12,8 @@
 module swerv_soc_wrapper
    (AN_0,
     Digits_Bits_0,
-    bidir_0,
+    PWMs,
+    bidir,
     clk_0,
     dmi_hard_reset_0,
     dmi_reg_addr_0,
@@ -20,11 +21,13 @@ module swerv_soc_wrapper
     dmi_reg_rdata_0,
     dmi_reg_wdata_0,
     dmi_reg_wr_en_0,
-    extintsrc_req_0,
+  //  extintsrc_req_0,
     i_ram_init_done_0,
     i_ram_init_error_0,
     i_sw,
+    i_uart_rx,
     o_led,
+    o_uart_tx,
     ram_araddr,
     ram_arburst,
     ram_arcache,
@@ -67,7 +70,8 @@ module swerv_soc_wrapper
     rst_0);
   output [7:0]AN_0;
   output [6:0]Digits_Bits_0;
-  output [31:0]bidir_0;
+  output [1:0]PWMs;
+  output [31:0]bidir;
   input clk_0;
   input dmi_hard_reset_0;
   input [6:0]dmi_reg_addr_0;
@@ -75,11 +79,13 @@ module swerv_soc_wrapper
   output [31:0]dmi_reg_rdata_0;
   input [31:0]dmi_reg_wdata_0;
   input dmi_reg_wr_en_0;
-  input [8:1]extintsrc_req_0;
+//  input [8:1]extintsrc_req_0;
   input i_ram_init_done_0;
   input i_ram_init_error_0;
   input [15:0]i_sw;
+  input i_uart_rx;
   output [15:0]o_led;
+  output o_uart_tx;
   output [31:0]ram_araddr;
   output [1:0]ram_arburst;
   output [3:0]ram_arcache;
@@ -123,7 +129,8 @@ module swerv_soc_wrapper
 
   wire [7:0]AN_0;
   wire [6:0]Digits_Bits_0;
-  wire [31:0]bidir_0;
+  wire [1:0]PWMs;
+  wire [31:0]bidir;
   wire clk_0;
   wire dmi_hard_reset_0;
   wire [6:0]dmi_reg_addr_0;
@@ -131,11 +138,13 @@ module swerv_soc_wrapper
   wire [31:0]dmi_reg_rdata_0;
   wire [31:0]dmi_reg_wdata_0;
   wire dmi_reg_wr_en_0;
-  wire [8:1]extintsrc_req_0;
+ // wire [8:1]extintsrc_req_0;
   wire i_ram_init_done_0;
   wire i_ram_init_error_0;
   wire [15:0]i_sw;
+  wire i_uart_rx;
   wire [15:0]o_led;
+  wire o_uart_tx;
   wire [31:0]ram_araddr;
   wire [1:0]ram_arburst;
   wire [3:0]ram_arcache;
@@ -180,7 +189,8 @@ module swerv_soc_wrapper
   swerv_soc swerv_soc_i
        (.AN_0(AN_0),
         .Digits_Bits_0(Digits_Bits_0),
-        .bidir_0(bidir_0),
+        .PWMs(PWMs),
+        .bidir(bidir),
         .clk_0(clk_0),
         .dmi_hard_reset_0(dmi_hard_reset_0),
         .dmi_reg_addr_0(dmi_reg_addr_0),
@@ -188,11 +198,13 @@ module swerv_soc_wrapper
         .dmi_reg_rdata_0(dmi_reg_rdata_0),
         .dmi_reg_wdata_0(dmi_reg_wdata_0),
         .dmi_reg_wr_en_0(dmi_reg_wr_en_0),
-        .extintsrc_req_0(extintsrc_req_0),
+    //   // .extintsrc_req_0(extintsrc_req_0),
         .i_ram_init_done_0(i_ram_init_done_0),
         .i_ram_init_error_0(i_ram_init_error_0),
         .i_sw(i_sw),
+        .i_uart_rx(i_uart_rx),
         .o_led(o_led),
+        .o_uart_tx(o_uart_tx),
         .ram_araddr(ram_araddr),
         .ram_arburst(ram_arburst),
         .ram_arcache(ram_arcache),

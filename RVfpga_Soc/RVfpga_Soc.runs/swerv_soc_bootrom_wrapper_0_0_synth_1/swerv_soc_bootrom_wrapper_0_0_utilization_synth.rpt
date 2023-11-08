@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Oct  8 10:08:39 2023
+| Date         : Mon Oct 30 22:19:15 2023
 | Host         : LAPTOP-SSK6ALTK running 64-bit major release  (build 9200)
 | Command      : report_utilization -file swerv_soc_bootrom_wrapper_0_0_utilization_synth.rpt -pb swerv_soc_bootrom_wrapper_0_0_utilization_synth.pb
 | Design       : swerv_soc_bootrom_wrapper_0_0
