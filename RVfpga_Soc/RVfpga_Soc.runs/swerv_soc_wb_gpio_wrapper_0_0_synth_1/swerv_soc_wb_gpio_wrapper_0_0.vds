@@ -1,0 +1,227 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Oct 30 22:18:13 2023
+# Process ID: 24932
+# Current directory: C:/Users/R9000X/Desktop/jiekou_lab/lab4/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1
+# Command line: vivado.exe -log swerv_soc_wb_gpio_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_wb_gpio_wrapper_0_0.tcl
+# Log file: C:/Users/R9000X/Desktop/jiekou_lab/lab4/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/swerv_soc_wb_gpio_wrapper_0_0.vds
+# Journal file: C:/Users/R9000X/Desktop/jiekou_lab/lab4/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source swerv_soc_wb_gpio_wrapper_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab4/ip_repo/show_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab4/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top swerv_soc_wb_gpio_wrapper_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25972
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1001.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/synth/swerv_soc_wb_gpio_wrapper_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'wb_gpio_wrapper' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/gpio_top.v:115]
+	Parameter dw bound to: 32 - type: integer 
+	Parameter aw bound to: 8 - type: integer 
+	Parameter gw bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (1#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/gpio_top.v:115]
+WARNING: [Synth 8-7071] port 'aux_i' of module 'gpio_top' is unconnected for instance 'gpio' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
+WARNING: [Synth 8-7071] port 'clk_pad_i' of module 'gpio_top' is unconnected for instance 'gpio' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
+WARNING: [Synth 8-7023] instance 'gpio' of module 'gpio_top' has 17 connections declared, but only 15 given [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'wb_gpio_wrapper' (2#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' (3#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/synth/swerv_soc_wb_gpio_wrapper_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1001.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1017.145 ; gain = 15.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1017.145 ; gain = 15.445
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1017.145 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1131.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1131.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 9     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |    66|
+|3     |LUT3 |    35|
+|4     |LUT4 |     9|
+|5     |LUT5 |   112|
+|6     |LUT6 |    98|
+|7     |FDCE |   420|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1131.145 ; gain = 129.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1131.145 ; gain = 15.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1131.145 ; gain = 129.445
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1131.145 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1131.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 4 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:49 . Memory (MB): peak = 1131.145 ; gain = 129.445
+INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab4/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/swerv_soc_wb_gpio_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab4/RVfpga_Soc/RVfpga_Soc.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/swerv_soc_wb_gpio_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_wb_gpio_wrapper_0_0_utilization_synth.rpt -pb swerv_soc_wb_gpio_wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 30 22:19:17 2023...

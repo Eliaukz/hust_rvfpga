@@ -1,0 +1,1294 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov  2 19:41:05 2023
+# Process ID: 4572
+# Current directory: C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1
+# Command line: vivado.exe -log rvfpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rvfpga.tcl
+# Log file: C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/rvfpga.vds
+# Journal file: C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source rvfpga.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab5/ip_repo/show_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/R9000X/Desktop/jiekou_lab/lab5/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top rvfpga -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11756
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rvfpga' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/rvfpga.sv:26]
+	Parameter RAM_SIZE bound to: 65536 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_gen_nexys' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/clk_gen_nexys.v:24]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:61605]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 16 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 32 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (1#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:61605]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen_nexys' (2#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/clk_gen_nexys.v:24]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/axi_intf.sv:20]
+	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000001000000 
+	Parameter AXI_ID_WIDTH bound to: 32'b00000000000000000000000000000110 
+	Parameter AXI_USER_WIDTH bound to: 32'b00000000000000000000000000000001 
+	Parameter AXI_STRB_WIDTH bound to: 32'b00000000000000000000000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (2#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/axi_intf.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/axi_intf.sv:20]
+	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000001000000 
+	Parameter AXI_ID_WIDTH bound to: 32'b00000000000000000000000000000110 
+	Parameter AXI_USER_WIDTH bound to: 32'b00000000000000000000000000000001 
+	Parameter AXI_STRB_WIDTH bound to: 32'b00000000000000000000000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (2#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/axi_intf.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'axi_cdc_intf' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/axi_cdc.sv:133]
+	Parameter AXI_ID_WIDTH bound to: 32'b00000000000000000000000000000110 
+	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000001000000 
+	Parameter AXI_USER_WIDTH bound to: 32'b00000000000000000000000000000001 
+	Parameter LOG_DEPTH bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'axi_cdc' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/axi_cdc.sv:23]
+	Parameter LogDepth bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:81]
+	Parameter WIDTH bound to: 32'b00000000000000000000000001001010 
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_src' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:151]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrFull bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'sync' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/sync.sv:15]
+	Parameter STAGES bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'sync' (3#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/sync.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'gray_to_binary' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/gray_to_binary.sv:15]
+	Parameter N bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'gray_to_binary' (4#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/gray_to_binary.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'binary_to_gray' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/binary_to_gray.sv:15]
+	Parameter N bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'binary_to_gray' (5#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/binary_to_gray.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_src' (6#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:151]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_dst' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:209]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrEmpty bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'spill_register' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register' (7#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_dst' (8#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:209]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray' (9#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:81]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray__parameterized0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:81]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000001001 
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_src__parameterized0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:151]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrFull bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_src__parameterized0' (9#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:151]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_dst__parameterized0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:209]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrEmpty bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized0' (9#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_dst__parameterized0' (9#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:209]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray__parameterized0' (9#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:81]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray__parameterized1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:81]
+	Parameter WIDTH bound to: 32'b00000000000000000000000001000100 
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_src__parameterized1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:151]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrFull bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_src__parameterized1' (9#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:151]
+INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_dst__parameterized1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:209]
+	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001 
+	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrWidth bound to: 32'sb00000000000000000000000000000010 
+	Parameter PtrEmpty bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized1' (9#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_dst__parameterized1' (9#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:209]
+INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray__parameterized1' (9#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/cdc_fifo_gray.sv:81]
+INFO: [Synth 8-6155] done synthesizing module 'axi_cdc' (10#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/axi_cdc.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'axi_cdc_intf' (11#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/axi_cdc.sv:133]
+INFO: [Synth 8-6157] synthesizing module 'litedram_top' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_top.v:27]
+	Parameter ID_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'litedram_core' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:4]
+INFO: [Synth 8-3876] $readmem data file 'litedram_core.init' is read successfully [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16699]
+INFO: [Synth 8-3876] $readmem data file 'mem_1.init' is read successfully [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16719]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:15886]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:15955]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16023]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16171]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (12#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16776]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35060]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (13#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35060]
+WARNING: [Synth 8-7071] port 'RDY' of module 'IDELAYCTRL' is unconnected for instance 'IDELAYCTRL' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16776]
+WARNING: [Synth 8-7023] instance 'IDELAYCTRL' of module 'IDELAYCTRL' has 3 connections declared, but only 2 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16776]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50398]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: BUF - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (14#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50398]
+WARNING: [Synth 8-7071] port 'OFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'SHIFTOUT1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'SHIFTOUT2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'TBYTEOUT' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'TFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'TQ' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'SHIFTIN1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'SHIFTIN2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'T1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'T2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'T3' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'T4' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'TBYTEIN' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7071] port 'TCE' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+WARNING: [Synth 8-7023] instance 'OSERDESE2' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16787]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (15#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+WARNING: [Synth 8-7071] port 'OFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'SHIFTOUT1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'SHIFTOUT2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'TBYTEOUT' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'TFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'TQ' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'SHIFTIN1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'SHIFTIN2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'T1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'T2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'T3' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'T4' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'TBYTEIN' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'TCE' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_1' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_1' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16815]
+WARNING: [Synth 8-7071] port 'OFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'SHIFTOUT1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'SHIFTOUT2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'TBYTEOUT' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'TFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'TQ' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'SHIFTIN1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'SHIFTIN2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'T1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'T2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'T3' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'T4' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'TBYTEIN' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'TCE' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_2' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_2' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16837]
+WARNING: [Synth 8-7071] port 'OFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'SHIFTOUT1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'SHIFTOUT2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'TBYTEOUT' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'TFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'TQ' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'SHIFTIN1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'SHIFTIN2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'T1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'T2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'T3' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'T4' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'TBYTEIN' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'TCE' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_3' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_3' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16859]
+WARNING: [Synth 8-7071] port 'OFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'SHIFTOUT1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'SHIFTOUT2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'TBYTEOUT' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'TFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'TQ' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'SHIFTIN1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'SHIFTIN2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'T1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'T2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'T3' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'T4' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'TBYTEIN' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'TCE' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_4' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_4' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16881]
+WARNING: [Synth 8-7071] port 'OFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'SHIFTOUT1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'SHIFTOUT2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'TBYTEOUT' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'TFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'TQ' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'SHIFTIN1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'SHIFTIN2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'T1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'T2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'T3' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'T4' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'TBYTEIN' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'TCE' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_5' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_5' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16903]
+WARNING: [Synth 8-7071] port 'OFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'SHIFTOUT1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'SHIFTOUT2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'TBYTEOUT' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'TFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'TQ' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'SHIFTIN1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'SHIFTIN2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'T1' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'T2' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'T3' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'T4' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'TBYTEIN' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'TCE' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_6' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_6' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16925]
+WARNING: [Synth 8-7071] port 'OFB' of module 'OSERDESE2' is unconnected for instance 'OSERDESE2_7' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16947]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'OSERDESE2_7' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16947]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_8' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16969]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_9' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:16991]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_10' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17013]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_11' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17035]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_12' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17057]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_13' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17079]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_14' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17101]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_15' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17123]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_16' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17145]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_17' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17167]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_18' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17189]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_19' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17211]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_20' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17233]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_21' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17255]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_22' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17277]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_23' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17299]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_24' of module 'OSERDESE2' has 27 connections declared, but only 17 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17321]
+INFO: [Synth 8-6157] synthesizing module 'IOBUFDS' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36259]
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS' (16#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36259]
+WARNING: [Synth 8-7023] instance 'IOBUFDS' of module 'IOBUFDS' has 5 connections declared, but only 4 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17341]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_25' of module 'OSERDESE2' has 27 connections declared, but only 17 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17354]
+WARNING: [Synth 8-7023] instance 'IOBUFDS_1' of module 'IOBUFDS' has 5 connections declared, but only 4 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17374]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_26' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17387]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_27' of module 'OSERDESE2' has 27 connections declared, but only 13 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17409]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_28' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17431]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:38620]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (17#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:38620]
+WARNING: [Synth 8-7023] instance 'ISERDESE2' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17457]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (18#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+WARNING: [Synth 8-7023] instance 'IDELAYE2' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17484]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (19#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_29' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17507]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_1' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17533]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_1' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17560]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_30' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17583]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_2' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17609]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_2' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17636]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_31' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17659]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_3' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17685]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_3' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17712]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_32' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17735]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_4' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17761]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_4' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17788]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_33' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17811]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_5' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17837]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_5' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17864]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_34' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17887]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_6' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17913]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_6' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17940]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_35' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17963]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_7' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:17989]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_7' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18016]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_36' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18039]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_8' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18065]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_8' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18092]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_37' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18115]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_9' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18141]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_9' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18168]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_38' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18191]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_10' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18217]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_10' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18244]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_39' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18267]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_11' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18293]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_11' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18320]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_40' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18343]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_12' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18369]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_12' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18396]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_41' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18419]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_13' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18445]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_13' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18472]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_42' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18495]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_14' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18521]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_14' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18548]
+WARNING: [Synth 8-7023] instance 'OSERDESE2_43' of module 'OSERDESE2' has 27 connections declared, but only 16 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18571]
+WARNING: [Synth 8-7023] instance 'ISERDESE2_15' of module 'ISERDESE2' has 28 connections declared, but only 15 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18597]
+WARNING: [Synth 8-7023] instance 'IDELAYE2_15' of module 'IDELAYE2' has 12 connections declared, but only 7 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18624]
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_top' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v:3]
+	Parameter RESET_PC bound to: 1'b0 
+	Parameter WITH_CSR bound to: 1 - type: integer 
+	Parameter RF_WIDTH bound to: 2 - type: integer 
+	Parameter RF_L2D bound to: 10 - type: integer 
+	Parameter CSR_REGS bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_ram_if' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v:2]
+	Parameter width bound to: 2 - type: integer 
+	Parameter csr_regs bound to: 4 - type: integer 
+	Parameter depth bound to: 576 - type: integer 
+	Parameter l2w bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_ram_if' (20#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_ram' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v:1]
+	Parameter width bound to: 2 - type: integer 
+	Parameter csr_regs bound to: 4 - type: integer 
+	Parameter depth bound to: 576 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_ram' (21#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_top' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_top.v:3]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+	Parameter RESET_PC bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'serv_csr' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v:2]
+	Parameter CSR_SOURCE_CSR bound to: 2'b00 
+	Parameter CSR_SOURCE_EXT bound to: 2'b01 
+	Parameter CSR_SOURCE_SET bound to: 2'b10 
+	Parameter CSR_SOURCE_CLR bound to: 2'b11 
+	Parameter CSR_MSCRATCH bound to: 2'b00 
+	Parameter CSR_MTVEC bound to: 2'b01 
+	Parameter CSR_MEPC bound to: 2'b10 
+	Parameter CSR_MTVAL bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'serv_csr' (22#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_state' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_state.v:1]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_state' (23#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_state.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_decode' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v:2]
+	Parameter CSR_SOURCE_CSR bound to: 2'b00 
+	Parameter CSR_SOURCE_EXT bound to: 2'b01 
+	Parameter CSR_SOURCE_SET bound to: 2'b10 
+	Parameter CSR_SOURCE_CLR bound to: 2'b11 
+	Parameter CSR_MSCRATCH bound to: 2'b00 
+	Parameter CSR_MTVEC bound to: 2'b01 
+	Parameter CSR_MEPC bound to: 2'b10 
+	Parameter CSR_MTVAL bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'serv_decode' (24#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_bufreg' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'serv_bufreg' (25#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_ctrl' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v:2]
+	Parameter RESET_PC bound to: 1'b0 
+	Parameter WITH_CSR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_ctrl' (26#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_alu' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v:2]
+	Parameter BOOL_LUT bound to: 16'b1000111010010110 
+INFO: [Synth 8-6157] synthesizing module 'serv_shift' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'serv_shift' (27#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'serv_alu' (28#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_if' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v:2]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+	Parameter CSR_SOURCE_CSR bound to: 2'b00 
+	Parameter CSR_SOURCE_EXT bound to: 2'b01 
+	Parameter CSR_SOURCE_SET bound to: 2'b10 
+	Parameter CSR_SOURCE_CLR bound to: 2'b11 
+	Parameter CSR_MSCRATCH bound to: 2'b00 
+	Parameter CSR_MTVEC bound to: 2'b01 
+	Parameter CSR_MEPC bound to: 2'b10 
+	Parameter CSR_MTVAL bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_if' (29#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_mem_if' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v:2]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_mem_if' (30#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'serv_top' (31#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_top' (32#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FD' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13483]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (33#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13483]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:61526]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 16 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 90.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (34#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:61526]
+WARNING: [Synth 8-7023] instance 'PLLE2_ADV' of module 'PLLE2_ADV' has 21 connections declared, but only 9 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:18920]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13664]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (35#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13664]
+INFO: [Synth 8-6155] done synthesizing module 'litedram_core' (36#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_core.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'litedram_top' (37#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/LiteDRAM/litedram_top.v:27]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/rvfpga.sv:176]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78204]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (38#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78204]
+INFO: [Synth 8-6157] synthesizing module 'bscan_tap' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/bscan_tap.sv:16]
+	Parameter AWIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BSCANE2' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:884]
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BSCANE2' (39#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:884]
+INFO: [Synth 8-6157] synthesizing module 'BSCANE2__parameterized0' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:884]
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BSCANE2__parameterized0' (39#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:884]
+INFO: [Synth 8-6157] synthesizing module 'BSCANE2__parameterized1' [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:884]
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BSCANE2__parameterized1' (39#1) [E:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'bscan_tap' (40#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/bscan_tap.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wrapper' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:841]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_PWM_w_Int_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_PWM_w_Int_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_PWM_w_Int_0_0' (41#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_PWM_w_Int_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'PWM_w_Int_0' of module 'swerv_soc_PWM_w_Int_0_0' has 25 connections declared, but only 23 given [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:1364]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_axi2wb_intcon_wrapper_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_axi2wb_intcon_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_axi2wb_intcon_wrapper_0_0' (42#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_axi2wb_intcon_wrapper_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi2wb_intcon_wrapper_0' of module 'swerv_soc_axi2wb_intcon_wrapper_0_0' has 253 connections declared, but only 237 given [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:1388]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_axi_gpio_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_axi_gpio_0_0' (43#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_axi_iic_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_axi_iic_0_0' (44#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_iic_0' of module 'swerv_soc_axi_iic_0_0' has 27 connections declared, but only 26 given [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:1649]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_axi_interconnect_0_0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:1989]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1XYL15O' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1XYL15O' (45#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_C58QX0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_C58QX0' (46#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_11W3T2L' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:290]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_11W3T2L' (47#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:290]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_RRH9HC' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:422]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_auto_ds_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_auto_ds_0' (48#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_auto_pc_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_auto_pc_0' (49#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_RRH9HC' (50#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:422]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_xbar_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_xbar_0' (51#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (9) of module 'swerv_soc_xbar_0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:2646]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (9) of module 'swerv_soc_xbar_0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:2650]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_axi_interconnect_0_0' (52#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:1989]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_bootrom_wrapper_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_bootrom_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_bootrom_wrapper_0_0' (53#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_bootrom_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_ptc_wrapper_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_ptc_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_ptc_wrapper_0_0' (54#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_ptc_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_swerv_wrapper_verilog_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_swerv_wrapper_verilog_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_swerv_wrapper_verilog_0_0' (55#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_swerv_wrapper_verilog_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_syscon_wrapper_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_syscon_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_syscon_wrapper_0_0' (56#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_syscon_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_wb_gpio_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' (57#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_wb_gpio_wrapper_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'wb_gpio_wrapper_0' of module 'swerv_soc_wb_gpio_wrapper_0_0' has 13 connections declared, but only 12 given [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:1934]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wb_spi_wrapper_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_wb_spi_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wb_spi_wrapper_0_0' (58#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_wb_spi_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wb_uart_wrapper_0_0' [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_wb_uart_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wb_uart_wrapper_0_0' (59#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/.Xil/Vivado-4572-LAPTOP-SSK6ALTK/realtime/swerv_soc_wb_uart_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_xlconcat_0_0' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_xlconcat_0_0/synth/swerv_soc_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 8 - type: integer 
+	Parameter NUM_PORTS bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (60#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.srcs/sources_1/bd/swerv_soc/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_xlconcat_0_0' (61#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_xlconcat_0_0/synth/swerv_soc_xlconcat_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc' (62#1) [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v:841]
+WARNING: [Synth 8-7023] instance 'swerv_soc_i' of module 'swerv_soc' has 68 connections declared, but only 57 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v:220]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wrapper' (63#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v:12]
+WARNING: [Synth 8-7023] instance 'swervolf' of module 'swerv_soc_wrapper' has 70 connections declared, but only 63 given [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/rvfpga.sv:208]
+INFO: [Synth 8-6155] done synthesizing module 'rvfpga' (64#1) [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/rvfpga.sv:26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1121.641 ; gain = 106.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1121.641 ; gain = 106.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1121.641 ; gain = 106.051
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 1121.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi2wb_intcon_wrapper_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi2wb_intcon_wrapper_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_gpio_wrapper_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_gpio_wrapper_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/swerv_wrapper_verilog_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/swerv_wrapper_verilog_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/bootrom_wrapper_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/bootrom_wrapper_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_xbar_0/swerv_soc_xbar_0/swerv_soc_xbar_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_xbar_0/swerv_soc_xbar_0/swerv_soc_xbar_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_gpio_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_uart_wrapper_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_uart_wrapper_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_PWM_w_Int_0_0/swerv_soc_PWM_w_Int_0_0/swerv_soc_PWM_w_Int_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/PWM_w_Int_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_PWM_w_Int_0_0/swerv_soc_PWM_w_Int_0_0/swerv_soc_PWM_w_Int_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/PWM_w_Int_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_ptc_wrapper_0_0/swerv_soc_ptc_wrapper_0_0/swerv_soc_ptc_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/ptc_wrapper_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_ptc_wrapper_0_0/swerv_soc_ptc_wrapper_0_0/swerv_soc_ptc_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/ptc_wrapper_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/syscon_wrapper_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/syscon_wrapper_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_spi_wrapper_0_0/swerv_soc_wb_spi_wrapper_0_0/swerv_soc_wb_spi_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_spi_wrapper_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_spi_wrapper_0_0/swerv_soc_wb_spi_wrapper_0_0/swerv_soc_wb_spi_wrapper_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/wb_spi_wrapper_0'
+Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_iic_0_0/swerv_soc_axi_iic_0_0/swerv_soc_axi_iic_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_iic_0'
+Finished Parsing XDC File [c:/Users/R9000X/Desktop/jiekou_lab/lab3/RVfpga_Soc/RVfpga_Soc.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_iic_0_0/swerv_soc_axi_iic_0_0/swerv_soc_axi_iic_0_0_in_context.xdc] for cell 'swervolf/swerv_soc_i/axi_iic_0'
+Parsing XDC File [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/liteDRAM.xdc]
+Finished Parsing XDC File [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/liteDRAM.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/liteDRAM.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/rvfpga.xdc]
+Finished Parsing XDC File [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/rvfpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/rvfpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/dont_touch.xdc]
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1214.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  FD => FDRE: 8 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1214.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1214.465 ; gain = 198.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1214.465 ; gain = 198.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/axi2wb_intcon_wrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/wb_gpio_wrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/swerv_wrapper_verilog_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/bootrom_wrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/wb_uart_wrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/PWM_w_Int_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/ptc_wrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/syscon_wrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/wb_spi_wrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for swervolf/swerv_soc_i/axi_iic_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1214.465 ; gain = 198.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'subfragments_refresher_state_reg' in module 'litedram_core'
+INFO: [Synth 8-802] inferred FSM for state register 'litedramcore_state_reg' in module 'litedram_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+*
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'subfragments_refresher_state_reg' using encoding 'one-hot' in module 'litedram_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+*
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'litedramcore_state_reg' using encoding 'one-hot' in module 'litedram_core'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1214.465 ; gain = 198.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 20    
+	   2 Input    4 Bit       Adders := 49    
+	   2 Input    3 Bit       Adders := 38    
+	   2 Input    2 Bit       Adders := 19    
+	   3 Input    2 Bit       Adders := 5     
+	   2 Input    1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      2 Bit         XORs := 20    
+	   2 Input      1 Bit         XORs := 3     
++---XORs : 
+	                2 Bit    Wide XORs := 20    
++---Registers : 
+	               80 Bit    Registers := 1     
+	               74 Bit    Registers := 13    
+	               68 Bit    Registers := 4     
+	               41 Bit    Registers := 2     
+	               32 Bit    Registers := 18    
+	               27 Bit    Registers := 2     
+	               21 Bit    Registers := 8     
+	               16 Bit    Registers := 36    
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 13    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 13    
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 29    
+	                4 Bit    Registers := 41    
+	                3 Bit    Registers := 55    
+	                2 Bit    Registers := 49    
+	                1 Bit    Registers := 204   
++---RAMs : 
+	              64K Bit	(2048 X 32 bit)          RAMs := 1     
+	               1K Bit	(576 X 2 bit)          RAMs := 1     
+	               1K Bit	(16 X 80 bit)          RAMs := 1     
+	               1K Bit	(16 X 74 bit)          RAMs := 1     
+	              384 Bit	(16 X 24 bit)          RAMs := 8     
+	              160 Bit	(16 X 10 bit)          RAMs := 3     
+	              128 Bit	(16 X 8 bit)          RAMs := 2     
+	               62 Bit	(2 X 31 bit)          RAMs := 1     
+	               16 Bit	(2 X 8 bit)          RAMs := 8     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   74 Bit        Muxes := 6     
+	   2 Input   68 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 2     
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   41 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 19    
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   21 Bit        Muxes := 8     
+	   2 Input   14 Bit        Muxes := 1     
+	   3 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 11    
+	   4 Input   13 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 9     
+	   2 Input    5 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 8     
+	   3 Input    3 Bit        Muxes := 3     
+	   7 Input    3 Bit        Muxes := 20    
+	   2 Input    3 Bit        Muxes := 23    
+	   6 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 22    
+	   3 Input    2 Bit        Muxes := 8     
+	   6 Input    2 Bit        Muxes := 1     
+	  15 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 236   
+	   4 Input    1 Bit        Muxes := 12    
+	  11 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 16    
+	   7 Input    1 Bit        Muxes := 104   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1214.465 ; gain = 198.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++--------------+------------+---------------+----------------+
+|Module Name   | RTL Object | Depth x Width | Implemented As | 
++--------------+------------+---------------+----------------+
+|litedram_core | memdat_reg | 8192x32       | Block RAM      | 
++--------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\ddr2/ldc /serv_rf_top | rf_ram/memory_reg | 0 K x 2(READ_FIRST)    | W |   | 0 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\ddr2/ldc              | storage_10_reg    | 16 x 80(READ_FIRST)    | W |   | 16 x 80(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
+|\ddr2/ldc              | storage_13_reg    | 16 x 66(READ_FIRST)    | W |   | 16 x 66(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|\ddr2/ldc              | mem_1_reg         | 2 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 2      | 
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+---------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives  | 
++------------+---------------------+-----------+----------------------+-------------+
+|\ddr2/ldc   | data_mem_grain6_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | tag_mem_reg         | Implied   | 2 x 31               | RAM32M x 6	 | 
+|\ddr2/ldc   | storage_2_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_3_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_4_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_5_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_6_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_7_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_8_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_9_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_1_reg       | Implied   | 16 x 8               | RAM32M x 2	 | 
+|\ddr2/ldc   | storage_11_reg      | Implied   | 16 x 6               | RAM32M x 1	 | 
+|\ddr2/ldc   | storage_12_reg      | Implied   | 16 x 6               | RAM32M x 2	 | 
+|\ddr2/ldc   | storage_14_reg      | Implied   | 16 x 8               | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain0_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain1_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain2_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain3_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain4_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain5_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain7_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
++------------+---------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 8 of C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/rvfpga.xdc. [C:/Users/R9000X/Desktop/jiekou_lab/lab5/rtl_src/rvfpga.xdc:8]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 1214.465 ; gain = 198.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1214.465 ; gain = 198.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\ddr2/ldc /serv_rf_top | rf_ram/memory_reg | 0 K x 2(READ_FIRST)    | W |   | 0 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\ddr2/ldc              | storage_10_reg    | 16 x 80(READ_FIRST)    | W |   | 16 x 80(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
+|\ddr2/ldc              | storage_13_reg    | 16 x 66(READ_FIRST)    | W |   | 16 x 66(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|\ddr2/ldc              | mem_1_reg         | 2 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 2      | 
++-----------------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++------------+---------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives  | 
++------------+---------------------+-----------+----------------------+-------------+
+|\ddr2/ldc   | data_mem_grain6_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | tag_mem_reg         | Implied   | 2 x 31               | RAM32M x 6	 | 
+|\ddr2/ldc   | storage_2_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_3_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_4_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_5_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_6_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_7_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_8_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_9_reg       | Implied   | 16 x 22              | RAM32M x 4	 | 
+|\ddr2/ldc   | storage_1_reg       | Implied   | 16 x 8               | RAM32M x 2	 | 
+|\ddr2/ldc   | storage_11_reg      | Implied   | 16 x 6               | RAM32M x 1	 | 
+|\ddr2/ldc   | storage_12_reg      | Implied   | 16 x 6               | RAM32M x 2	 | 
+|\ddr2/ldc   | storage_14_reg      | Implied   | 16 x 8               | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain0_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain1_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain2_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain3_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain4_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain5_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
+|\ddr2/ldc   | data_mem_grain7_reg | Implied   | 2 x 8                | RAM32M x 2	 | 
++------------+---------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/serv_rf_top/rf_ram/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/storage_10_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/storage_10_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/storage_13_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/mem_1_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/mem_1_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/memdat_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/memdat_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/memdat_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/memdat_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/memdat_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/memdat_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/memdat_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ddr2/ldc/memdat_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1252.051 ; gain = 236.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 1265.738 ; gain = 250.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 1265.738 ; gain = 250.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 1265.738 ; gain = 250.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 1265.738 ; gain = 250.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 1265.785 ; gain = 250.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 1265.785 ; gain = 250.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|rvfpga      | ddr2/ldc/subfragments_new_master_rdata_valid8_reg  | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|rvfpga      | ddr2/ldc/subfragments_new_master_rdata_valid17_reg | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|rvfpga      | ddr2/ldc/a7ddrphy_rddata_en_tappeddelayline7_reg   | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|rvfpga      | tap/dmi_reg[17]                                    | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|rvfpga      | tap/dmi_reg[7]                                     | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |swerv_soc_xbar_0                    |         1|
+|2     |swerv_soc_auto_ds_0                 |         1|
+|3     |swerv_soc_auto_pc_0                 |         1|
+|4     |swerv_soc_PWM_w_Int_0_0             |         1|
+|5     |swerv_soc_axi2wb_intcon_wrapper_0_0 |         1|
+|6     |swerv_soc_axi_gpio_0_0              |         1|
+|7     |swerv_soc_axi_iic_0_0               |         1|
+|8     |swerv_soc_bootrom_wrapper_0_0       |         1|
+|9     |swerv_soc_ptc_wrapper_0_0           |         1|
+|10    |swerv_soc_swerv_wrapper_verilog_0_0 |         1|
+|11    |swerv_soc_syscon_wrapper_0_0        |         1|
+|12    |swerv_soc_wb_gpio_wrapper_0_0       |         1|
+|13    |swerv_soc_wb_spi_wrapper_0_0        |         1|
+|14    |swerv_soc_wb_uart_wrapper_0_0       |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |swerv_soc_PWM_w_Int_0             |     1|
+|2     |swerv_soc_auto_ds                 |     1|
+|3     |swerv_soc_auto_pc                 |     1|
+|4     |swerv_soc_axi2wb_intcon_wrapper_0 |     1|
+|5     |swerv_soc_axi_gpio_0              |     1|
+|6     |swerv_soc_axi_iic_0               |     1|
+|7     |swerv_soc_bootrom_wrapper_0       |     1|
+|8     |swerv_soc_ptc_wrapper_0           |     1|
+|9     |swerv_soc_swerv_wrapper_verilog_0 |     1|
+|10    |swerv_soc_syscon_wrapper_0        |     1|
+|11    |swerv_soc_wb_gpio_wrapper_0       |     1|
+|12    |swerv_soc_wb_spi_wrapper_0        |     1|
+|13    |swerv_soc_wb_uart_wrapper_0       |     1|
+|14    |swerv_soc_xbar                    |     1|
+|15    |BSCANE2                           |     3|
+|16    |BUFG                              |     7|
+|17    |CARRY4                            |    96|
+|18    |IDELAYCTRL                        |     1|
+|19    |IDELAYE2                          |    16|
+|20    |ISERDESE2                         |    16|
+|21    |LUT1                              |   158|
+|22    |LUT2                              |   406|
+|23    |LUT3                              |   584|
+|24    |LUT4                              |   650|
+|25    |LUT5                              |   618|
+|26    |LUT6                              |  1241|
+|27    |MUXF7                             |    98|
+|28    |MUXF8                             |     3|
+|29    |OSERDESE2                         |    44|
+|30    |PLLE2_ADV                         |     1|
+|31    |PLLE2_BASE                        |     1|
+|32    |RAM32M                            |    60|
+|33    |RAMB18E1                          |     2|
+|35    |RAMB36E1                          |    12|
+|45    |SRL16E                            |     5|
+|46    |STARTUPE2                         |     1|
+|47    |FD                                |     8|
+|48    |FDCE                              |   560|
+|49    |FDPE                              |     4|
+|50    |FDRE                              |  2545|
+|51    |FDSE                              |   190|
+|52    |IBUF                              |    19|
+|53    |IOBUF                             |    16|
+|54    |IOBUFDS                           |     2|
+|55    |OBUF                              |    58|
+|56    |OBUFDS                            |     1|
+|57    |OBUFT                             |     5|
++------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 1265.785 ; gain = 250.195
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:03 . Memory (MB): peak = 1265.785 ; gain = 157.371
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 1265.785 ; gain = 250.195
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 1273.820 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 333 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 34 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1273.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 88 instances were transformed.
+  FD => FDRE: 8 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 60 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+199 Infos, 192 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:18 . Memory (MB): peak = 1273.879 ; gain = 258.289
+INFO: [Common 17-1381] The checkpoint 'C:/Users/R9000X/Desktop/jiekou_lab/lab5/RVfpga_Soc/RVfpga_Soc.runs/synth_1/rvfpga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rvfpga_utilization_synth.rpt -pb rvfpga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  2 19:42:35 2023...
